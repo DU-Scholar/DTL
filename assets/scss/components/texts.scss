@@ -1,0 +1,55 @@
+@import "../libs/variables";
+
+.text_header--active{
+  @include text_header
+}
+
+.text_header--disabled{
+  @include text_header;
+  color: $clr_text-blue-light;
+}
+
+.text_header--disabled:hover{
+  transition: 0.8s;
+  color: $clr_text-blue;
+}
+
+.text_search-item-ja{
+  @include text_search-item-ja
+}
+
+.text_search-item-en{
+  @include text_search-item-en
+}
+
+.text_button{
+  @include text_button
+}
+
+.text_card-title{
+  @include text_card-title
+}
+
+.text_card-content{
+  @include text_card-content
+}
+
+.text_description-title{
+  @include text_description-title
+}
+
+.text_description-subtitle{
+  @include text_description-subtitle
+}
+
+.text_description-content{
+  @include text_description-content
+}
+
+.text_calendar-month{
+  @include text_calendar-month
+}
+
+.text_calendar-plan{
+  @include text_calendar-plan
+}

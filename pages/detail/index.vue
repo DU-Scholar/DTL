@@ -3,4 +3,4 @@
   <div class="p-detail"></div>
 </template>
 <script></script>
-<style></style>
+<style lang="scss" scoped></style>
