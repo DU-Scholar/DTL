@@ -1,0 +1,21 @@
+name: Nuxtjs with versioned node
+
+on: [push,pull_request]
+
+jobs:
+  nuxtjs-tests:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_SITE_ID: ${{ secrets.SITE_ID }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.SITE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Install Dependencies
+        run: |
+          npm i
+      - name: Execute tests
+        run: |
+          npm run test

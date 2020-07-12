@@ -1,6 +1,14 @@
 # DTL
 
 DTL サークル紹介APP
+
+## Netlify
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b0e487b-6c0a-4730-9a22-1a0703f8c36b/deploy-status)](https://app.netlify.com/sites/du-dtl/deploys)
+
+du-dtl.netlify.app
+
+
 ## Build Setup
 
 ```bash
