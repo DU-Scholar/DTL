@@ -1,1 +1,19 @@
 @import "../libs/variables";
+.bt {
+  display: inline-block;
+  padding: 5px 30px;
+  text-decoration: none;
+  background: #E5F2F3;
+  color: #7F7F7F;
+  /* border-bottom: solid 4px #627295; */
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #c4cbcb, 
+  -15px -15px 30px #ffffff;
+}
+
+.bt:active {
+   transform: translateY(4px);
+   background-color: #d3dfdf;
+   box-shadow: 1px 1px 2px #c4cbcb, 
+   -1px -1px 2px #ffffff;
+}
