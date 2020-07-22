@@ -22,9 +22,9 @@
     <div class="container">
       <p>ボタンのサンプル</p>
     </div>
-     <div class="cards">
-       <p>カードのサンプル</p>
-     </div>
+    <div class="cards">
+      <p>カードのサンプル</p>
+    </div>
   </div>
 </template>
 
