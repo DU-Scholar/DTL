@@ -19,7 +19,7 @@
       <p class="text_calendar-month">行事予定の月用文字</p>
       <p class="text_calendar-plan">行事予定の内容文字</p>
     </div>
-    <div class="container">
+    <div class="bt">
       <p>ボタンのサンプル</p>
     </div>
     <div class="cards">
