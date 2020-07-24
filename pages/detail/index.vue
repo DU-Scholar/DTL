@@ -1,7 +1,7 @@
 <!--サークル詳細ページ-->
 <template>
   <div class="p-detail">
-    <div class="title">
+    <div class="text_description-title">
       <h1>同大硬式</h1>
     </div>
 
@@ -18,8 +18,8 @@
 
     <div class="intro">
       <div class="content">
-        <h2>私たちはこんなサークルです</h2>
-        <div class="info">
+        <h2 class="text_description-title">私たちはこんなサークルです</h2>
+        <div class="info text_description-content">
           同硬は同志社大学唯一の大学公認のテニスサークルです!<br />
           なので大学のテニスコートが使えます！そんなサークルは同硬だけ！！！！！<br />
           テニスも遊びも全力で！🎾💃🏻<br />
@@ -32,17 +32,17 @@
 
     <div class="content">
       <div>
-        <h2>当サークルの魅力はココ！</h2>
+        <h2 class="text_description-title">当サークルの魅力はココ！</h2>
       </div>
 
       <div class="content">
-        <h3>テニスを全力で楽しむ！！</h3>
+        <h3 class="text_description-subtitle">テニスを全力で楽しむ！！</h3>
         <img
           class="pic_gather"
           src="@/assets/images/detail/図1.png"
           alt="集合写真"
         />
-        <p>
+        <p class="text_description-content">
           私達は最高で週６回もテニスができるテニス好きが集まるサークルです。<br />
           同志社のサークルで一番強いサークルを決める夏団では男女ともに準優勝でした！<br />
           また四代対抗戦（同志社、立命館、関学、神大）などの対外試合が多いのも魅力です！
@@ -50,26 +50,26 @@
       </div>
 
       <div class="content">
-        <h3>60年以上の歴史がある！！</h3>
+        <h3 class="text_description-subtitle">60年以上の歴史がある！！</h3>
         <img
           class="pic_gather"
           src="@/assets/images/detail/図2.png"
           alt="集合写真"
         />
-        <p>
+        <p class="text_description-content">
           同大硬式は60年以上もの歴史がある由緒ただしいサークルです！<br />
           そのため縦の繋がりが強く、OB・OG戦などの世代を超えた交流も行っています！<br />
         </p>
       </div>
 
       <div class="content">
-        <h3>人が魅力！！！</h3>
+        <h3 class="text_description-subtitle">人が魅力！！！</h3>
         <img
           class="pic_gather"
           src="@/assets/images/detail/図3.png"
           alt="集合写真"
         />
-        <p>
+        <p class="text_description-content">
           同大硬式の魅力は人にあります！<br />
           先輩がなんでも親身になって話を聞いてくれたり、休日には積極的に遊びに連れていってくれたりと、先輩後輩の垣根を超えた交流ができます！
         </p>
@@ -83,11 +83,6 @@
   margin: 0;
   background-color: #e5f2f3;
   text-align: center;
-  color: #595959;
-}
-
-h1 {
-  font-size: 60px;
 }
 
 .intro-video video {
@@ -106,14 +101,13 @@ h1 {
 
 h3:before {
   content: url('~@/assets/images/detail/iconmonstr-square-1.svg');
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
-.content,
-.content h2 {
+.content {
   text-align: left;
-  width: 55vw;
   display: inline-block;
+  width: 65vw;
 }
 
 .info {
@@ -153,15 +147,7 @@ h3 {
 
 /* 画像とテキストのバランス調整のレスポンシブ対応 */
 @media (max-width: 700px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
   h3 {
-    font-size: 15px;
     margin-left: unset;
   }
 
