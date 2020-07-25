@@ -1,5 +1,5 @@
 <template>
-  <div class="c-header">hoge</div>
+  <div class="c-header"></div>
 </template>
 <script>
 export default {}

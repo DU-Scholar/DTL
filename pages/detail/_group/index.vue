@@ -11,11 +11,10 @@
         muted
         playsinline
         preload="auto"
-        src="@/assets/images/detail/ddkoushiki/615821837.288317.mp4"
+        src="/detail/ddkoushiki/615821837.288317.mp4"
         controls
       ></video>
     </div>
-
     <div class="intro">
       <div class="content">
         <h2 class="text_description-title">私たちはこんなサークルです</h2>
@@ -37,11 +36,7 @@
         <h3 class="text_description-subtitle">
           {{ element['title'] }}
         </h3>
-        <img
-          class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図1.png"
-          alt="集合写真"
-        />
+        <img class="pic_gather" :src="element['image']" alt="集合写真" />
         <p class="text_description-content">
           <span v-html="element['about']"></span>
         </p>
