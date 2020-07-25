@@ -56,7 +56,10 @@ export default {
     return /同大硬式/.test(params.group)
   },
   async mounted() {
-    await this.fetchData({ name: '同大硬式' })
+    // パラメーター取得
+    const params = this.$route.params.group
+    // データ取得
+    await this.fetchData({ name: params })
     this.data = this.getData()
   },
   methods: {
