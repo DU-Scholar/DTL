@@ -1,4 +1,5 @@
 # DTL
+![build](https://github.com/DU-Scholar/DTL/workflows/Nuxtjs%20with%20versioned%20node/badge.svg)
 
 DTL サークル紹介APP
 
