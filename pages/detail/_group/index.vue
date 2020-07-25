@@ -90,7 +90,7 @@ export default {
 }
 
 h3:before {
-  content: url('~@/assets/images/detail/ddkoushiki/iconmonstr-square-1.svg');
+  content: url('~@/assets/images/detail/iconmonstr-square-1.svg');
   margin-right: 7px;
 }
 

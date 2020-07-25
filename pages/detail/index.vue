@@ -11,7 +11,7 @@
         muted
         playsinline
         preload="auto"
-        src="@/assets/images/detail/ddkoushiki/615821837.288317.mp4"
+        src="/detail/ddkoushiki/615821837.288317.mp4"
         controls
       ></video>
     </div>
@@ -39,7 +39,7 @@
         <h3 class="text_description-subtitle">テニスを全力で楽しむ！！</h3>
         <img
           class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図1.png"
+          src="/detail/ddkoushiki/図1.png"
           alt="集合写真"
         />
         <p class="text_description-content">
@@ -53,7 +53,7 @@
         <h3 class="text_description-subtitle">60年以上の歴史がある！！</h3>
         <img
           class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図2.png"
+          src="/detail/ddkoushiki/図2.png"
           alt="集合写真"
         />
         <p class="text_description-content">
@@ -66,7 +66,7 @@
         <h3 class="text_description-subtitle">人が魅力！！！</h3>
         <img
           class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図3.png"
+          src="/detail/ddkoushiki/図3.png"
           alt="集合写真"
         />
         <p class="text_description-content">
