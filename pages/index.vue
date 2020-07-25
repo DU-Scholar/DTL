@@ -4,6 +4,10 @@
       <p>サークル詳細ページはこちら=></p>
       <router-link to="./detail">サークル詳細ページ</router-link>
     </div>
+    <div class="container p-showcase-links">
+      <p>同大硬式（サンプル）詳細ページはこちら=></p>
+      <router-link to="./detail/同大硬式">同大硬式詳細ページ</router-link>
+    </div>
     <div class="container">
       <p>文字のサンプル</p>
       <p class="text_header--active">ヘッダー（選択時）</p>

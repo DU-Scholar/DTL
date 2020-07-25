@@ -2,7 +2,7 @@
 <template>
   <div class="p-detail">
     <div class="text_description-title">
-      <h1>同大硬式</h1>
+      <h1>{{ data.name }}</h1>
     </div>
 
     <div class="intro-video">
@@ -20,12 +20,7 @@
       <div class="content">
         <h2 class="text_description-title">私たちはこんなサークルです</h2>
         <div class="info text_description-content">
-          同硬は同志社大学唯一の大学公認のテニスサークルです!<br />
-          なので大学のテニスコートが使えます！そんなサークルは同硬だけ！！！！！<br />
-          テニスも遊びも全力で！🎾💃🏻<br />
-          めちゃくちゃ楽しみます🤣🤣🤣<br />
-          心配や不安は一切不必要！ 先輩後輩仲良くてすぐに馴染める！
-          みんなが主人公になれます😉<br />
+          <span v-html="data.LongDescription"></span>
         </div>
       </div>
     </div>
@@ -34,50 +29,47 @@
       <div>
         <h2 class="text_description-title">当サークルの魅力はココ！</h2>
       </div>
-
-      <div class="content">
-        <h3 class="text_description-subtitle">テニスを全力で楽しむ！！</h3>
+      <div
+        v-for="(element, idx) of data.descriptions"
+        :key="idx"
+        class="content"
+      >
+        <h3 class="text_description-subtitle">
+          {{ element['title'] }}
+        </h3>
         <img
           class="pic_gather"
           src="@/assets/images/detail/ddkoushiki/図1.png"
           alt="集合写真"
         />
         <p class="text_description-content">
-          私達は最高で週６回もテニスができるテニス好きが集まるサークルです。<br />
-          同志社のサークルで一番強いサークルを決める夏団では男女ともに準優勝でした！<br />
-          また四代対抗戦（同志社、立命館、関学、神大）などの対外試合が多いのも魅力です！
-        </p>
-      </div>
-
-      <div class="content">
-        <h3 class="text_description-subtitle">60年以上の歴史がある！！</h3>
-        <img
-          class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図2.png"
-          alt="集合写真"
-        />
-        <p class="text_description-content">
-          同大硬式は60年以上もの歴史がある由緒ただしいサークルです！<br />
-          そのため縦の繋がりが強く、OB・OG戦などの世代を超えた交流も行っています！<br />
-        </p>
-      </div>
-
-      <div class="content">
-        <h3 class="text_description-subtitle">人が魅力！！！</h3>
-        <img
-          class="pic_gather"
-          src="@/assets/images/detail/ddkoushiki/図3.png"
-          alt="集合写真"
-        />
-        <p class="text_description-content">
-          同大硬式の魅力は人にあります！<br />
-          先輩がなんでも親身になって話を聞いてくれたり、休日には積極的に遊びに連れていってくれたりと、先輩後輩の垣根を超えた交流ができます！
+          <span v-html="element['about']"></span>
         </p>
       </div>
     </div>
   </div>
 </template>
-<script></script>
+<script>
+import { dataMapper } from '../../../store/dataConstructor'
+export default {
+  data() {
+    return {
+      data: '',
+    }
+  },
+  validate({ params }) {
+    return /同大硬式/.test(params.group)
+  },
+  async mounted() {
+    await this.fetchData({ name: '同大硬式' })
+    this.data = this.getData()
+  },
+  methods: {
+    ...dataMapper.mapGetters(['getData']),
+    ...dataMapper.mapActions(['fetchData']),
+  },
+}
+</script>
 <style lang="scss" scoped>
 .p-detail {
   margin: 0;
