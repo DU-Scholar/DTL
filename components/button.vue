@@ -1,7 +1,7 @@
 <template>
-<div>
-  <a class="bt" href="#">ボタンのサンプル</a>
-</div>
+  <div>
+    <a id="#" class="bt">ボタンのサンプル</a>
+  </div>
 </template>
 <script>
 export default {}
