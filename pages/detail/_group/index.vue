@@ -42,11 +42,26 @@
         </p>
       </div>
     </div>
+    <div class="d-flex">
+      <div>
+        <Sex-chart />
+        <Faculty-chart />
+      </div>
+      <Events />
+    </div>
   </div>
 </template>
 <script>
 import { dataMapper } from '../../../store/dataConstructor'
+import SexChart from '@/components/detail/SexPieChart'
+import FacultyChart from '@/components/detail/FacultyPieChart'
+import Events from '@/components/detail/AnnalEvents'
 export default {
+  components: {
+    Events,
+    SexChart,
+    FacultyChart,
+  },
   data() {
     return {
       data: '',
@@ -99,7 +114,16 @@ h3:before {
   display: inline-block;
   width: 65vw;
 }
-
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}
 .info {
   text-align: center;
   line-height: 30px;

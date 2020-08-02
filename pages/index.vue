@@ -26,7 +26,7 @@
     <div>
       <a id="#" class="bt">ボタンのサンプル</a>
     </div>
-    <div class="cards">
+    <div class="c-cards">
       <p>カードのサンプル</p>
     </div>
   </div>
