@@ -31,7 +31,7 @@
                 ticks: {
                   suggestedMax: 100,
                   suggestedMin: 0,
-                  stepSize: 10,
+                  stepSize: 20,
                   callback: function (value, index, values) {
                     return value + '%'
                   },
