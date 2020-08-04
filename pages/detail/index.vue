@@ -76,10 +76,10 @@
         </p>
       </div>
     </div>
-    <div class="flexElems-wrapper">
-      <div class="flexCharts-wrapper">
-        <div class="PieChart">
-          <canvas id="myPieChart"></canvas>
+    <div class="p-flexElems-wrapper">
+      <div class="p-flexCharts-wrapper">
+        <div class="p-PieChart">
+          <canvas id="p-myPieChart"></canvas>
           <script>
             var ctx = document.getElementById('myPieChart')
             var myPieChart = new Chart(ctx, {
@@ -114,150 +114,115 @@
           </script>
         </div>
         <!-- PieChart end -->
-        <div class="PieChart">
-          <canvas id="myBarChart"></canvas>
-          <script>
-            var ctx = document.getElementById('myBarChart')
-            var myBarChart = new Chart(ctx, {
-              backgroundColor: 'rgba(0,1,0,0.1)',
-              type: 'bar',
-              data: {
-                labels: ['経済', '商', '政策', '文', '法', 'グロ地', '理工'],
-                datasets: [
-                  {
-                    label: '所属学部',
-                    data: [62, 65, 93, 85, 51, 66, 47],
-                    backgroundColor: '#b6c6e3',
-                  },
-                ],
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                title: {
-                  display: true,
-                  text: '学部構成比',
-                  fontStyle: 'normal',
-                  fontColor: '#595959',
-                },
-                scales: {
-                  yAxes: [
-                    {
-                      ticks: {
-                        suggestedMax: 100,
-                        suggestedMin: 0,
-                        stepSize: 10,
-                        callback: function (value, index, values) {
-                          return value + '%'
-                        },
-                      },
-                    },
-                  ],
-                },
-              },
-            })
-          </script>
+        <div class="p-faculty-constitution c-cards text_description-content">
+          <p>経済</p>
+          <p>商</p>
+          <p>政策</p>
+          <p>文</p>
+          <p>法</p>
+          <p>グロ地</p>
+          <p>理工</p>
         </div>
-        <!-- BarChart end -->
+        <!-- faculty-constitution end -->
       </div>
       <!-- flexCharts-wrapper end -->
-      <div class="annualEvents">
+      <div class="p-annualEvents c-cards">
         <table width="100%">
           <tbody width="100%">
             <tr>
               <th width="30%">
-                <span class="mon">1月</span>
+                <span class="p-mon">1月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">2月</span>
+                <span class="p-mon">2月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">3月</span>
+                <span class="p-mon">3月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">4月</span>
+                <span class="p-mon">4月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">5月</span>
+                <span class="p-mon">5月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">6月</span>
+                <span class="p-mon">6月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">7月</span>
+                <span class="p-mon">7月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">8月</span>
+                <span class="p-mon">8月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">9月</span>
+                <span class="p-mon">9月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">10月</span>
+                <span class="p-mon">10月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">11月</span>
+                <span class="p-mon">11月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
             <tr>
               <th width="30%">
-                <span class="mon">12月</span>
+                <span class="p-mon">12月</span>
               </th>
               <th width="70%">
-                <span class="event">テキスト</span>
+                <span class="p-event">テキスト</span>
               </th>
             </tr>
           </tbody>
@@ -367,38 +332,42 @@ h3 {
     outline: none;
   }
 }
-.flexElems-wrapper {
+.p-flexElems-wrapper {
   display: flex;
   flex-direction: row;
 }
-.PieChart {
+.p-PieChart {
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   width: 50vw;
   height: 50%;
 }
-.annualEvents {
-  border-radius: 30px;
-  background: linear-gradient(145deg, #d4dddd, #fdffff);
-  box-shadow: 20px 20px 60px #c9d0d0, -20px -20px 60px #ffffff;
+.p-faculty-constitution {
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-faculty-constitution p {
+  padding: 5px 20px;
+}
+.p-annualEvents {
   padding: 20px;
   margin: 20px;
   width: 50vw;
 }
-.annualEvents span.mon {
+.p-annualEvents span.p-mon {
   color: #595959;
 }
-.annualEvents span.event {
+.p-annualEvents span.p-event {
   color: #a6a6a6;
 }
 @media screen and (max-width: 480px) {
-  .flexElems-wrapper {
+  .p-flexElems-wrapper {
     flex-direction: column;
   }
-  .PieChart {
+  .p-PieChart {
     width: 100vw;
   }
-  .annualEvents {
+  .p-annualEvents {
     margin: 0 auto;
   }
 }
