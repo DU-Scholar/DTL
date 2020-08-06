@@ -95,20 +95,48 @@
             <li>活動場所：両方</li>
             <li>募集回生：新入生のみ</li>
             <li>アピールポイント：テニスのガチ度</li>
-            <li>
+            <div class="p-to-detail">
               <a id="#" class="bt text_button">詳しく見る</a>
-            </li>
+            </div>
           </ul>
         </div>
       </div>
     </div>
-    <div class="bt_select sp_button">
-      <select class="text_button" required>
-        <option value="" hidden>練習頻度</option>
-        <option value="1">多め</option>
-        <option value="2">そこそこ</option>
-        <option value="3">少なめ</option>
-      </select>
+    <div class="c-cards">
+      <div class="bt_select sp_button">
+        <select class="text_button" required>
+          <option value hidden>練習頻度</option>
+          <option value="1">多め</option>
+          <option value="2">そこそこ</option>
+          <option value="3">少なめ</option>
+        </select>
+      </div>
+      <div class="bt_select sp_button">
+        <select class="text_button" required>
+          <option value hidden>活動場所</option>
+          <option value="1">今出川キャンパス</option>
+          <option value="2">京田辺キャンパス</option>
+          <option value="3">両方</option>
+        </select>
+      </div>
+      <div class="bt_select sp_button">
+        <select class="text_button" required>
+          <option value hidden>人数</option>
+          <option value="1">大人数</option>
+          <option value="2">アットホーム</option>
+        </select>
+      </div>
+      <div class="bt_select sp_button">
+        <select class="text_button" required>
+          <option value hidden>参加可能回生</option>
+          <option value="1">新入生</option>
+          <option value="2">一回生途中</option>
+          <option value="3">いつでも</option>
+        </select>
+      </div>
+      <div class="p-search">
+        <a id="#" class="bt text_button">上記の条件で検索</a>
+      </div>
     </div>
   </div>
 </template>
@@ -198,13 +226,51 @@ img {
   border-radius: 50px;
 }
 .p-container-r .bt {
-  width: 55%;
   margin: 10px 0 0 0;
+  text-align: center;
+}
+/*レスポンシブ*/
+@media screen and (max-width: 768px) {
+  .p-container-l {
+    width: 47%;
+  }
+  .c-cards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  h3 {
+    padding-top: 10px;
+  }
+  .p-top {
+    padding: 0;
+  }
+  .p-menu {
+    display: block;
+    margin: 0 auto;
+  }
+  .p-container-l,
+  .p-container-r {
+    width: 100%;
+  }
+  .p-menu ul {
+    padding-left: 0;
+  }
+  .p-cards-list {
+    padding: 0 10px;
+  }
+  .p-container-r .bt {
+    margin: 4px 0 20px 0;
+    text-align: center;
+  }
+  .p-to-detail {
+    text-align: center;
+  }
 }
 /*サンプルのボタン*/
 .bt_select {
   overflow: hidden;
-  width: 214px;
+  width: 315px;
   margin: 2em auto;
   box-shadow: 15px 15px 30px #c4cbcb, -15px -15px 30px #ffffff;
 }
