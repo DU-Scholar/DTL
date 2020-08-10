@@ -103,39 +103,41 @@
       </div>
     </div>
     <div class="c-cards">
-      <div class="bt_select sp_button">
-        <select class="text_button" required>
-          <option value hidden>練習頻度</option>
-          <option value="1">多め</option>
-          <option value="2">そこそこ</option>
-          <option value="3">少なめ</option>
-        </select>
-      </div>
-      <div class="bt_select sp_button">
-        <select class="text_button" required>
-          <option value hidden>活動場所</option>
-          <option value="1">今出川キャンパス</option>
-          <option value="2">京田辺キャンパス</option>
-          <option value="3">両方</option>
-        </select>
-      </div>
-      <div class="bt_select sp_button">
-        <select class="text_button" required>
-          <option value hidden>人数</option>
-          <option value="1">大人数</option>
-          <option value="2">アットホーム</option>
-        </select>
-      </div>
-      <div class="bt_select sp_button">
-        <select class="text_button" required>
-          <option value hidden>参加可能回生</option>
-          <option value="1">新入生</option>
-          <option value="2">一回生途中</option>
-          <option value="3">いつでも</option>
-        </select>
-      </div>
-      <div class="p-search">
-        <a id="#" class="bt text_button">上記の条件で検索</a>
+      <div class="p-sp-menu">
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>練習頻度</option>
+            <option value="1">多め</option>
+            <option value="2">そこそこ</option>
+            <option value="3">少なめ</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>活動場所</option>
+            <option value="1">今出川キャンパス</option>
+            <option value="2">京田辺キャンパス</option>
+            <option value="3">両方</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>人数</option>
+            <option value="1">大人数</option>
+            <option value="2">アットホーム</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>参加可能回生</option>
+            <option value="1">新入生</option>
+            <option value="2">一回生途中</option>
+            <option value="3">いつでも</option>
+          </select>
+        </div>
+        <div class="p-search">
+          <a id="#" class="bt text_button">上記の条件で検索</a>
+        </div>
       </div>
     </div>
   </div>
@@ -177,17 +179,20 @@ ul {
   list-style: none;
 }
 .p-menu-bar {
-  min-width: 22%;
+  min-width: 17%;
   text-align: center;
+}
+.p-menu-bar ul {
+  padding-left: 0;
 }
 .p-menu-bar ul > li {
   text-align: right;
 }
 .p-menu-bar ul > li > h2 {
-  margin-bottom: 3%;
+  margin-bottom: 6%;
 }
 .p-menu-list {
-  width: 70%;
+  width: 83%;
   text-align: left;
 }
 .p-menu-list_button ul {
@@ -229,8 +234,19 @@ img {
   margin: 10px 0 0 0;
   text-align: center;
 }
+@media screen and (max-width: 1300px) {
+  .p-menu-bar {
+    min-width: 19%;
+  }
+  .p-menu-list {
+    min-width: 81%;
+  }
+}
 /*レスポンシブ*/
 @media screen and (max-width: 768px) {
+  .p-sp-menu {
+    padding-top: 1px;
+  }
   .p-container-l {
     width: 47%;
   }
