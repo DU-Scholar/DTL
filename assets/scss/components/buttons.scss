@@ -1,5 +1,7 @@
 @import "../libs/variables";
 .bt {
+  text-align: center;
+ min-width: 214px;
   margin: 30px;
   display: inline-block;
   padding: 5px 30px;
@@ -17,4 +19,20 @@
    background-color: #d3dfdf;
    box-shadow: 1px 1px 2px #c4cbcb, 
    -1px -1px 2px #ffffff;
+}
+
+@media screen and (max-width: 1399px) {
+  .bt {
+    min-width: 130px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .bt {
+    margin: 25px 13px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .bt {
+    margin: 20px 13px;
+  }
 }

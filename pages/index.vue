@@ -1,33 +1,144 @@
 <template>
-  <div class="p-showcase">
-    <div class="container p-showcase-links">
-      <p>サークル詳細ページはこちら=></p>
-      <router-link to="./detail">サークル詳細ページ</router-link>
+  <div class="p-top">
+    <div class="p-search-text">検索コマンド</div>
+    <div class="p-menu c-cards">
+      <div class="p-menu-bar">
+        <ul>
+          <li>
+            <h2 class="text_search-item-ja">練習頻度</h2>
+            <p class="text_search-item-en">practice</p>
+          </li>
+          <li>
+            <h2 class="text_search-item-ja">活動場所</h2>
+            <p class="text_search-item-en">place</p>
+          </li>
+          <li>
+            <h2 class="text_search-item-ja">人数</h2>
+            <p class="text_search-item-en">people</p>
+          </li>
+          <li>
+            <h2 class="text_search-item-ja">参加可能回生</h2>
+            <p class="text_search-item-en">grade</p>
+          </li>
+        </ul>
+      </div>
+      <div class="p-menu-list">
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <a id="#" class="bt text_button">多め</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">そこそこ</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">少なめ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <a id="#" class="bt text_button">今出川キャンパス</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">京田辺キャンンパス</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">両方</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <a id="#" class="bt text_button">大人数</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">アットホーム</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <a id="#" class="bt text_button">新入生</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">一回生の途中</a>
+            </li>
+            <li>
+              <a id="#" class="bt text_button">いつでも</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="container p-showcase-links">
-      <p>同大硬式（サンプル）詳細ページはこちら=></p>
-      <router-link to="./detail/同大硬式">同大硬式詳細ページ</router-link>
+    <div class="p-search">
+      <a id="#" class="bt text_button">上記の条件で検索</a>
     </div>
-    <div class="container">
-      <p>文字のサンプル</p>
-      <p class="text_header--active">ヘッダー（選択時）</p>
-      <p class="text_header--disabled">ヘッダー（別ページ）</p>
-      <p class="text_search-item-ja">検索項目の文字（日本語）</p>
-      <p class="text_search-item-en">検索項目の文字（英語）</p>
-      <p class="text_button">ボタンの文字</p>
-      <p class="text_card-title">サークル概要のタイトル文字</p>
-      <p class="text_card-content">サークル概要の本文文字</p>
-      <p class="text_description-title">サークル詳細のタイトル文字</p>
-      <p class="text_description-subtitle">サークル詳細のサブタイトル文字</p>
-      <p class="text_description-content">サークル詳細の本文文字</p>
-      <p class="text_calendar-month">行事予定の月用文字</p>
-      <p class="text_calendar-plan">行事予定の内容文字</p>
-    </div>
-    <div>
-      <a id="#" class="bt">ボタンのサンプル</a>
+    <div class="p-menu c-cards p-cards-list">
+      <div class="p-container-l">
+        <div class="p-card-list-title text_card-title">
+          <h3>同大硬式</h3>
+        </div>
+        <img src="/detail/ddkoushiki/図1.png" alt="集合写真" />
+        <div class="p-sns">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="p-container-r text_card-content">
+        <div>
+          <ul>
+            <li>練習頻度：週６回</li>
+            <li>活動場所：両方</li>
+            <li>募集回生：新入生のみ</li>
+            <li>アピールポイント：テニスのガチ度</li>
+            <div class="p-to-detail">
+              <a id="#" class="bt text_button">詳しく見る</a>
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="c-cards">
-      <p>カードのサンプル</p>
+      <div class="p-sp-menu">
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>練習頻度</option>
+            <option value="1">多め</option>
+            <option value="2">そこそこ</option>
+            <option value="3">少なめ</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>活動場所</option>
+            <option value="1">今出川キャンパス</option>
+            <option value="2">京田辺キャンパス</option>
+            <option value="3">両方</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>人数</option>
+            <option value="1">大人数</option>
+            <option value="2">アットホーム</option>
+          </select>
+        </div>
+        <div class="bt_select sp_button">
+          <select class="text_button" required>
+            <option value hidden>参加可能回生</option>
+            <option value="1">新入生</option>
+            <option value="2">一回生途中</option>
+            <option value="3">いつでも</option>
+          </select>
+        </div>
+        <div class="p-search">
+          <a id="#" class="bt text_button">上記の条件で検索</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +148,181 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.p-top {
+  padding: 0 70px;
+}
+.p-title {
+  display: flex;
+}
+.p-header-list {
+  margin: 4% 0 0 45%;
+}
+.p-list ul {
+  display: flex;
+}
+.p-list ul > li {
+  margin-right: 30px;
+}
+.p-list ul > li > a {
+  text-decoration: none;
+}
+.p-search-text {
+  color: #a6a6a6;
+  font-size: 30px;
+  margin: 4% 0 2% 0;
+}
+.p-menu {
+  margin-top: 30px;
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+.p-menu-bar {
+  min-width: 17%;
+  text-align: center;
+}
+.p-menu-bar ul {
+  padding-left: 0;
+}
+.p-menu-bar ul > li {
+  text-align: right;
+}
+.p-menu-bar ul > li > h2 {
+  margin-bottom: 6%;
+}
+.p-menu-list {
+  width: 83%;
+  text-align: left;
+}
+.p-menu-list_button ul {
+  display: flex;
+}
+.p-search {
+  text-align: center;
+}
+.p-container-l {
+  width: 35%;
+  text-align: center;
+}
+.p-sns {
+  text-align: center;
+}
+.p-sns a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #bfbfbf;
+}
+.p-container-r {
+  width: 50%;
+}
+.p-cards-list {
+  margin-top: 10%;
+  padding: 30px 60px;
+}
+.p-container-r ul > li {
+  margin: 20px 0;
+}
+h3 {
+  margin-top: 5px;
+}
+img {
+  width: 250px;
+  border-radius: 50px;
+}
+.p-container-r .bt {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+@media screen and (max-width: 1300px) {
+  .p-menu-bar {
+    min-width: 19%;
+  }
+  .p-menu-list {
+    min-width: 81%;
+  }
+}
+/*レスポンシブ*/
+@media screen and (max-width: 768px) {
+  .p-sp-menu {
+    padding-top: 1px;
+  }
+  .p-container-l {
+    width: 47%;
+  }
+  .c-cards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  h3 {
+    padding-top: 10px;
+  }
+  .p-top {
+    padding: 0;
+  }
+  .p-menu {
+    display: block;
+    margin: 0 auto;
+  }
+  .p-container-l,
+  .p-container-r {
+    width: 100%;
+  }
+  .p-menu ul {
+    padding-left: 0;
+  }
+  .p-cards-list {
+    padding: 0 10px;
+  }
+  .p-container-r .bt {
+    margin: 4px 0 20px 0;
+    text-align: center;
+  }
+  .p-to-detail {
+    text-align: center;
+  }
+}
+/*サンプルのボタン*/
+.bt_select {
+  overflow: hidden;
+  width: 315px;
+  margin: 2em auto;
+  box-shadow: 15px 15px 30px #c4cbcb, -15px -15px 30px #ffffff;
+}
+.bt_select select {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  appearance: none;
+}
+.bt_select select::-ms-expand {
+  display: none;
+}
+.bt_select.sp_button {
+  position: relative;
+  border-radius: 2px;
+  border-radius: 50px;
+  background: #e5f2f3;
+}
+.bt_select.sp_button::before {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #7f7f7f;
+  pointer-events: none;
+}
+.bt_select.sp_button select {
+  padding: 8px 38px 8px 38px;
+}
 @import '@/assets/scss/mixins';
 .container {
   @include c-container;
