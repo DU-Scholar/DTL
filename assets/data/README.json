@@ -37,6 +37,14 @@
     "members": 99,
     //参加可能回生：1 = 新入生, 2 = いつでも
     "canJoinGrade":1
-
-  }]
+  }],
+  "statistics": [{
+    // seibetu%
+    "sexRate": 0.5,
+    //学部構成
+    "gakubu": [1, 2, 3, 4]
+  }],
+  "Twitter":"https://twitter.com/dtla61st",
+  "Instagram":"https://instagram.com/dtla61st/",
+  "appeal": "テニスも遊びも全力！！\uD83C\uDF3B\uD83C\uDFBE"
 }

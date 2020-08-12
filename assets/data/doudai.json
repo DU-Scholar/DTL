@@ -29,7 +29,8 @@
     "canJoinGrade":1
   }],
   "statistics": [{
-    "sexRate": 0.5
+    "sexRate": 0.5,
+    "gakubu": [1, 2, 3, 4]
   }],
   "Twitter":"https://twitter.com/dtla61st",
   "Instagram":"https://instagram.com/dtla61st/",
