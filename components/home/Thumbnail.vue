@@ -2,9 +2,9 @@
   <div class="p-menu c-cards p-cards-list">
     <div class="p-container-l">
       <div class="p-card-list-title text_card-title">
-        <h3>同大硬式</h3>
+        <h3>{{ data.name }}</h3>
       </div>
-      <img src="/detail/ddkoushiki/図1.png" alt="集合写真" />
+      <img src="/detail/ddkoushiki/image1.png" alt="集合写真" />
       <div class="p-sns">
         <a href="#">Twitter</a>
         <a href="#">Instagram</a>
@@ -14,9 +14,16 @@
       <div>
         <ul>
           <li>練習頻度：週６回</li>
-          <li>活動場所：両方</li>
-          <li>募集回生：新入生のみ</li>
-          <li>アピールポイント：テニスのガチ度</li>
+          <li v-if="data.basicInfo[0].place === 1">活動場所：今出川</li>
+          <li v-if="data.basicInfo[0].place === 2">活動場所：京田辺</li>
+          <li v-if="data.basicInfo[0].place === 3">活動場所：両方</li>
+          <li v-if="data.basicInfo[0].canJoinGrade === 1">
+            募集回生：新入生のみ
+          </li>
+          <li v-if="data.basicInfo[0].canJoinGrade === 2">
+            募集回生：いつでも
+          </li>
+          <li>アピールポイント：{{ data.appeal }}</li>
           <div class="p-to-detail">
             <a id="#" class="bt text_button">詳しく見る</a>
           </div>
@@ -25,6 +32,26 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    group: {
+      type: String,
+    },
+  },
+  data() {
+    return {
+      data: {
+        basicInfo: [{}],
+      },
+    }
+  },
+  async mounted() {
+    console.log(this.group)
+    this.data = await require('@/assets/data/doudai')
+  },
+}
+</script>
 <style lang="scss" scoped>
 .p-menu {
   margin-top: 30px;

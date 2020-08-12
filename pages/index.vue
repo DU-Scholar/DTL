@@ -26,56 +26,50 @@
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a id="#" class="bt text_button">多め</a>
+              <a class="bt text_button">多め</a>
             </li>
             <li>
-              <a id="#" class="bt text_button">そこそこ</a>
+              <a class="bt text_button">そこそこ</a>
             </li>
             <li>
-              <a id="#" class="bt text_button">少なめ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="p-menu-list_button">
-          <ul>
-            <li>
-              <a id="#" class="bt text_button">今出川キャンパス</a>
-            </li>
-            <li>
-              <a id="#" class="bt text_button">京田辺キャンンパス</a>
-            </li>
-            <li>
-              <a id="#" class="bt text_button">両方</a>
+              <a class="bt text_button">少なめ</a>
             </li>
           </ul>
         </div>
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a id="#" class="bt text_button">大人数</a>
+              <a class="bt text_button">今出川キャンパス</a>
             </li>
             <li>
-              <a id="#" class="bt text_button">アットホーム</a>
+              <a class="bt text_button">京田辺キャンンパス</a>
             </li>
           </ul>
         </div>
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a id="#" class="bt text_button">新入生</a>
+              <a class="bt text_button">大人数</a>
             </li>
             <li>
-              <a id="#" class="bt text_button">一回生の途中</a>
+              <a class="bt text_button">アットホーム</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <a class="bt text_button">新入生</a>
             </li>
             <li>
-              <a id="#" class="bt text_button">いつでも</a>
+              <a class="bt text_button">いつでも</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="p-search">
-      <a id="#" class="bt text_button">上記の条件で検索</a>
+      <a class="bt text_button">上記の条件で検索</a>
     </div>
     <div class="c-cards">
       <div class="p-sp-menu">
@@ -105,23 +99,32 @@
           <select class="text_button" required>
             <option value hidden>参加可能回生</option>
             <option value="1">新入生</option>
-            <option value="3">いつでも</option>
+            <option value="2">いつでも</option>
           </select>
         </div>
         <div class="p-search">
-          <a id="#" class="bt text_button">上記の条件で検索</a>
+          <a class="bt text_button">上記の条件で検索</a>
         </div>
       </div>
     </div>
-    <Thumbnail />
+    <div v-for="(group, idx) in data['groups']" :key="idx">
+      {{ group }}
+      <Thumbnail :group="group" />
+    </div>
   </div>
 </template>
 
 <script>
 import Thumbnail from '@/components/home/Thumbnail'
+import groups from '@/assets/data/Circles'
 export default {
   components: {
     Thumbnail,
+  },
+  data() {
+    return {
+      data: groups,
+    }
   },
 }
 </script>

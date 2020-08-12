@@ -39,7 +39,7 @@
     "canJoinGrade":1
   }],
   "statistics": [{
-    // seibetu%
+    // 男子に合わす
     "sexRate": 0.5,
     //学部構成
     "gakubu": [1, 2, 3, 4]
