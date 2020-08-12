@@ -1,0 +1,41 @@
+{
+  "name": "アルバトロス",
+  "movie": "",
+  "LongDescription": "アルバトロスは京田辺キャンパス限定のテニスサークルです🎾<br />\n大学のコートを借りてテニスをしたりしています！<br />\nテニスだけではなく皆で遊んだりイベントが盛りだくさんです🥳<br />\nめちゃくちゃ楽しみます<br />\n気になった方は是非いらしてください☺️！",
+  "descriptions": [{
+      "title": "テニス初心者でも大歓迎！！",
+      "about": "アルバトロスはテニス初心者の子もたくさんいます。<br />\nもしかしたら初心者の子の方が多いかも！笑<br />\n経験者の人達と皆で一緒に上手くなりましょう😏",
+      "image": "/detail/albatorosu/image1.png"
+    },
+    {
+      "title": "優しい先輩がたくさん！！",
+      "about": "面倒見の良い先輩がたくさんいらっしゃるのでとても優しくしてくれます(^^)<br />\n授業の相談、恋愛の相談等なんでもしちゃってください😊<br />\n色々な学部の先輩がいるので色々な学部の授業の事などたくさん聞けます！",
+      "image": "/detail/albatorosu/image2.png"
+    },
+    {
+      "title": "テニスだけではない！！",
+      "about": " テニスだけではなく楽しいイベントがたくさんあります。クリスマスやハロウィンなどは皆でパーティーをしたりします🥳<br />\n他にもイベントが盛りだくさん！<br/>\n皆んなで楽しみましょう♪",
+      "image": "/detail/albatorosu/image3.png"
+    }
+  ],
+  "Event": [
+    "夏合宿",
+    "冬合宿",
+    "クリスマスパーティー",
+    "ハロウィンパーティー",
+    "DTLパーティー"
+  ],
+  "basicInfo": [{
+    "frequency": "そこそこ",
+    "place": 3,
+    "members": 100,
+    "canJoinGrade":2
+  }],
+  "statistics": [{
+    "sexRate": 0.4,
+    "gakubu": [1, 2, 3, 4]
+  }],
+  "Twitter":"https://twitter.com/albatross_2020",
+  "Instagram":"https://instagram.com/_albatross2020",
+  "appeal": "先輩の優しさが半端ない"
+}
