@@ -18,10 +18,20 @@
       "image": "/detail/ddkoushiki/図3.png"
     }
   ],
+  "Event": [
+    "行事1",
+    "行事2"
+  ],
   "basicInfo": [{
     "frequency": 6,
     "place": 3,
     "members": 99,
     "canJoinGrade":1
-  }]
+  }],
+  "statistics": [{
+    "sexRate": 0.5
+  }],
+  "Twitter":"https://twitter.com/dtla61st",
+  "Instagram":"https://instagram.com/dtla61st/",
+  "appeal": "テニスも遊びも全力！！\uD83C\uDF3B\uD83C\uDFBE"
 }

@@ -77,31 +77,6 @@
     <div class="p-search">
       <a id="#" class="bt text_button">上記の条件で検索</a>
     </div>
-    <div class="p-menu c-cards p-cards-list">
-      <div class="p-container-l">
-        <div class="p-card-list-title text_card-title">
-          <h3>同大硬式</h3>
-        </div>
-        <img src="/detail/ddkoushiki/図1.png" alt="集合写真" />
-        <div class="p-sns">
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
-      <div class="p-container-r text_card-content">
-        <div>
-          <ul>
-            <li>練習頻度：週６回</li>
-            <li>活動場所：両方</li>
-            <li>募集回生：新入生のみ</li>
-            <li>アピールポイント：テニスのガチ度</li>
-            <div class="p-to-detail">
-              <a id="#" class="bt text_button">詳しく見る</a>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="c-cards">
       <div class="p-sp-menu">
         <div class="bt_select sp_button">
@@ -117,7 +92,6 @@
             <option value hidden>活動場所</option>
             <option value="1">今出川キャンパス</option>
             <option value="2">京田辺キャンパス</option>
-            <option value="3">両方</option>
           </select>
         </div>
         <div class="bt_select sp_button">
@@ -131,7 +105,6 @@
           <select class="text_button" required>
             <option value hidden>参加可能回生</option>
             <option value="1">新入生</option>
-            <option value="2">一回生途中</option>
             <option value="3">いつでも</option>
           </select>
         </div>
@@ -140,11 +113,17 @@
         </div>
       </div>
     </div>
+    <Thumbnail />
   </div>
 </template>
 
 <script>
-export default {}
+import Thumbnail from '@/components/home/Thumbnail'
+export default {
+  components: {
+    Thumbnail,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -156,15 +135,6 @@ export default {}
 }
 .p-header-list {
   margin: 4% 0 0 45%;
-}
-.p-list ul {
-  display: flex;
-}
-.p-list ul > li {
-  margin-right: 30px;
-}
-.p-list ul > li > a {
-  text-decoration: none;
 }
 .p-search-text {
   color: #a6a6a6;
@@ -227,7 +197,6 @@ h3 {
   margin-top: 5px;
 }
 img {
-  width: 250px;
   border-radius: 50px;
 }
 .p-container-r .bt {
