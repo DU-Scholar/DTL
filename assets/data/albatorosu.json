@@ -26,14 +26,14 @@
     "DTLパーティー"
   ],
   "basicInfo": [{
-    "frequency": "そこそこ",
+    "frequency": "",
     "place": 3,
     "members": 100,
     "canJoinGrade":2
   }],
   "statistics": [{
     "sexRate": 0.4,
-    "gakubu": [1, 2, 3, 4]
+    "gakubu": []
   }],
   "Twitter":"https://twitter.com/albatross_2020",
   "Instagram":"https://instagram.com/_albatross2020",

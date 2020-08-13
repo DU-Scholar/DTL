@@ -1,0 +1,40 @@
+{
+"name": "エトランゼ",
+"movie": "",
+"LongDescription": "人数が多すぎず少なすぎずのサークルなので、サークル全体としてすっごく仲がいいです！<br />\n合宿はもちろん、同回同士でよく遊びに行ったり旅行に行ったりします！<br />\nまさにfamily！テニスだけでなくイベントもたくさんあります✨",
+"descriptions": [{
+    "title": "仲の良さ",
+    "about": "合宿だけでなく、自分たちで企画して旅行にいったり、遊びに行ったりします！<br />\n先輩が恐ろしいくらいお金持ちなのでご飯に連れて行ってくれたりもします！",
+    "image": "/detail/etoranze/image1.png"
+  },
+  {
+    "title": "兼サー可",
+    "about": "主にフットサルサークルとけ兼サーしている人が多いです！<br />\n合宿などのイベントもなるべくずらして行うので、どちらのサークルも積極的に参加している人が多いです！",
+    "image": "/detail/etoranze/image2.png"
+  },
+  {
+    "title": "先輩が松本人志並みにおもろい",
+    "about": "そうなんです😅",
+    "image": "/detail/etoranze/image3.png"
+  }
+],
+"Event": [
+  "春夏冬の合宿",
+  "回生旅行",
+  "3回生企画のラストイベント",
+  "２回生企画の初イベント"
+],
+"basicInfo": [{
+  "frequency": "",
+  "place": 3,
+  "members": 60,
+  "canJoinGrade":2
+}],
+"statistics": [{
+  "sexRate": "",
+  "gakubu": []
+}],
+"Twitter":"",
+"Instagram":"https://instagram.com/etranger_2020",
+"appeal": "超超超アットホーム！同回同士はもちろん、先輩後輩関係なく仲がいい✨"
+}

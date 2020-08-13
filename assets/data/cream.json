@@ -1,0 +1,41 @@
+{
+"name": "クリーム",
+"movie": "",
+"LongDescription": "テニス未経験のメンバーが多く、テニスをしたことがない人でもオススメです！<br />\n会長を始めとする役職についている先輩達も部活やサークルを兼任していて、テニサー内はもちろん大学で友達の人脈が1番広がるサークルです！",
+"descriptions": [{
+    "title": "とにかくみんな仲良い",
+    "about": "",
+    "image": "/detail/cream/image1.png"
+  },
+  {
+    "title": "自由度が高い",
+    "about": "",
+    "image": "/detail/cream/image2.png"
+  },
+  {
+    "title": "無限に思い出が作れる",
+    "about": " ",
+    "image": "/detail/cream/image3.png"
+  }
+],
+"Event": [
+  "新歓合宿",
+  "夏合宿",
+  "ハロウィンパーティー",
+  "新歓ユニバ",
+  "春合宿"
+],
+"basicInfo": [{
+  "frequency": "",
+  "place": 1,
+  "members": 98,
+  "canJoinGrade":2
+}],
+"statistics": [{
+  "sexRate": 0.4,
+  "gakubu": []
+}],
+"Twitter":"https://twitter.com/cream_2020",
+"Instagram":"https://instagram.com/cream_2020",
+"appeal": "世の中に存在するサークルで1番楽しいですよ！"
+}

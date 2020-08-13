@@ -1,0 +1,44 @@
+{
+"name": "コスモス",
+"movie": "",
+"LongDescription": "私達のサークルは、テニスは程よく、遊びはいっぱい楽しんで！って感じです！！<br />\nテニスもするけど、月に二回程度で、自由参加です！<br />\nもちろんテニスが終わったらみんなでご飯食べに行ったりするからテニスに参加するのもよし🌟普段テニスには全然参加してなくても、イベントだけ参加するのもよし🌸",
+"descriptions": [{
+    "title": "とりあえず、面白い人が多い！！",
+    "about": "",
+    "image": "/detail/cosmos/image1.png"
+  },
+  {
+    "title": "いろんな企画があるので、先輩後輩がほんとに仲良し✨",
+    "about": "",
+    "image": "/detail/cosmos/image2.png"
+  },
+  {
+    "title": "フットワークが軽い人が多いから、いつでも誘ってくれるし、誘えば来てくれる🌟",
+    "about": " ",
+    "image": "/detail/cosmos/image3.png"
+  }
+],
+"Event": [
+  "新歓合宿",
+  "夏合宿",
+  "EVE合宿",
+  "春合宿",
+  "その他BBQ",
+  "班企画",
+  "ドライブ企画",
+  "クリスマスパーティー"
+],
+"basicInfo": [{
+  "frequency": "",
+  "place": 2,
+  "members": "大人数",
+  "canJoinGrade":1
+}],
+"statistics": [{
+  "sexRate": 0.5,
+  "gakubu": []
+}],
+"Twitter":"https://twitter.com/cosmos20202",
+"Instagram":"https://instagram.com/cosmos_shinkan2020",
+"appeal": "イベント多めで面白い人が多い！！"
+}

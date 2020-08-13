@@ -1,0 +1,44 @@
+{
+  "name": "ノービス",
+  "movie": "",
+  "LongDescription": "私たちNOVICEは男女とても仲がよくアットホームなテニスサークルです。 <br />\nまた、今年は同志社、同志社女子のミスキャンファイナリストが3名も在籍していますまたNOVICEというのは初心者と言う意味でテニス初心者でも大歓迎です！",
+  "descriptions": [{
+      "title": "🎾DTL加盟のテニスサークル",
+      "about": "この写真は毎年DTL加盟サークルが集い行われる1回生限定のDTLパーティです。<br />\nミスミスター:レディダン(お笑い):マチョっといった3つの部門がありサークルから数名出場できます。Noviceに入ってぜひ参加してみてください！",
+      "image": "/detail/novis/image1.png"
+    },
+    {
+      "title": "🎾毎月イベントがある！",
+      "about": "毎月何かしらのイベントがあります。特に新入生は新歓合宿があり、そこで上回生と仲を深めることができます。<br />\nまた、夏合宿では海レク🏖を行ないます。<br />\n 写真はイブ合宿です！1泊２日でコテージにみんなで泊まり肝試しやイベントを行います〜😊",
+      "image": "/detail/novis/image2.png"
+    },
+    {
+      "title": "🎾とてもアットホーム☺️",
+      "about": "Noviceはとてもアットホームなサークルです！<br />\n先輩方も優しい方達です！またテニス初心者でも全然大丈夫です👌少しでも興味がある方は連絡待ってます👼 ",
+      "image": "/detail/novisimage3.png"
+    }
+  ],
+  "Event": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "basicInfo": [{
+    "frequency": "",
+    "place": 3,
+    "members": 60,
+    "canJoinGrade":2
+  }],
+  "statistics": [{
+    "sexRate": 0.5,
+    "gakubu": []
+  }],
+  "Twitter":"https://twitter.com/2020_novice",
+  "Instagram":"https://instagram.com/novice_2020/",
+  "appeal": "アットホームなサークルです！"
+  }
+  
