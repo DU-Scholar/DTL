@@ -108,7 +108,6 @@
       </div>
     </div>
     <div v-for="(group, idx) in data['groups']" :key="idx">
-      {{ group }}
       <Thumbnail :group="group" />
     </div>
   </div>

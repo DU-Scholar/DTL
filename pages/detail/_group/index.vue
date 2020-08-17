@@ -11,7 +11,7 @@
         muted
         playsinline
         preload="auto"
-        src="/detail/ddkoushiki/615821837.288317.mp4"
+        src="/detail/doudai/615821837.288317.mp4"
         controls
       ></video>
     </div>
@@ -67,12 +67,13 @@ export default {
       data: '',
     }
   },
-  validate({ params }) {
-    return /同大硬式/.test(params.group)
-  },
+  // validate({ params }) {
+  //   // return /同大硬式/.test(params.group)
+  // },
   async mounted() {
     // パラメーター取得
     const params = this.$route.params.group
+    console.log(params)
     // データ取得
     await this.fetchData({ name: params })
     this.data = this.getData()

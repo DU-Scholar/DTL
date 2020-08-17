@@ -4,7 +4,7 @@
       <div class="p-card-list-title text_card-title">
         <h3>{{ data.name }}</h3>
       </div>
-      <img src="/detail/ddkoushiki/image1.png" alt="集合写真" />
+      <img :src="`/detail/${group}/image1.png`" alt="集合写真" />
       <div class="p-sns">
         <a href="#">Twitter</a>
         <a href="#">Instagram</a>
@@ -36,6 +36,7 @@
 export default {
   props: {
     group: {
+      required: true,
       type: String,
     },
   },
@@ -47,8 +48,7 @@ export default {
     }
   },
   async mounted() {
-    console.log(this.group)
-    this.data = await require('@/assets/data/doudai')
+    this.data = await require(`@/assets/data/${this.group}`)
   },
 }
 </script>
