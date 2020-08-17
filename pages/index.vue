@@ -1,7 +1,7 @@
 <template>
   <div class="p-top">
     <div class="p-search-text">検索コマンド</div>
-    <div class="p-menu c-cards">
+    <div v-if="device === 'pc'" class="p-menu c-cards">
       <div class="p-menu-bar">
         <ul>
           <li>
@@ -59,10 +59,10 @@
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a class="bt text_button">新入生</a>
+              <a class="bt text_button" @click="options.grade = 1">新入生</a>
             </li>
             <li>
-              <a class="bt text_button">いつでも</a>
+              <a class="bt text_button" @click="options.grade = 2">いつでも</a>
             </li>
           </ul>
         </div>
@@ -71,7 +71,7 @@
     <div class="p-search">
       <a class="bt text_button">上記の条件で検索</a>
     </div>
-    <div class="c-cards">
+    <div v-if="device === 'sp'" class="c-cards">
       <div class="p-sp-menu">
         <div class="bt_select sp_button">
           <select class="text_button" required>
@@ -108,7 +108,7 @@
       </div>
     </div>
     <div v-for="(group, idx) in data['groups']" :key="idx">
-      <Thumbnail :group="group" />
+      <Thumbnail :group="group" :options="options" />
     </div>
   </div>
 </template>
@@ -123,7 +123,30 @@ export default {
   data() {
     return {
       data: groups,
+      device: '',
+      options: {
+        practice: '',
+        place: '',
+        people: '',
+        grade: 3,
+      },
     }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth <= 768) {
+        this.device = 'sp'
+      } else {
+        this.device = 'pc'
+      }
+    },
   },
 }
 </script>
@@ -274,7 +297,6 @@ img {
 }
 .bt_select.sp_button {
   position: relative;
-  border-radius: 2px;
   border-radius: 50px;
   background: #e5f2f3;
 }

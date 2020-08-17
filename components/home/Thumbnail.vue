@@ -1,5 +1,5 @@
 <template>
-  <div class="p-menu c-cards p-cards-list">
+  <div v-if="showJudgement" class="p-menu c-cards p-cards-list">
     <div class="p-container-l">
       <div class="p-card-list-title text_card-title">
         <h3>{{ data.name }}</h3>
@@ -25,7 +25,9 @@
           </li>
           <li>アピールポイント：{{ data.appeal }}</li>
           <div class="p-to-detail">
-            <a id="#" class="bt text_button">詳しく見る</a>
+            <router-link :to="`/detail/${data.name}`">
+              <a id="#" class="bt text_button">詳しく見る</a>
+            </router-link>
           </div>
         </ul>
       </div>
@@ -39,6 +41,9 @@ export default {
       required: true,
       type: String,
     },
+    options: {
+      type: Object,
+    },
   },
   data() {
     return {
@@ -46,6 +51,14 @@ export default {
         basicInfo: [{}],
       },
     }
+  },
+  computed: {
+    showJudgement() {
+      if (this.options.grade === 3) {
+        return true
+      }
+      return this.options.grade === this.data.basicInfo[0].canJoinGrade
+    },
   },
   async mounted() {
     this.data = await require(`@/assets/data/${this.group}`)

@@ -11,7 +11,7 @@
         muted
         playsinline
         preload="auto"
-        src="/detail/doudai/615821837.288317.mp4"
+        :src="data.movie"
         controls
       ></video>
     </div>
@@ -62,6 +62,11 @@ export default {
     SexChart,
     FacultyChart,
   },
+  props: {
+    options: {
+      type: Object,
+    },
+  },
   data() {
     return {
       data: '',
@@ -73,7 +78,6 @@ export default {
   async mounted() {
     // パラメーター取得
     const params = this.$route.params.group
-    console.log(params)
     // データ取得
     await this.fetchData({ name: params })
     this.data = this.getData()
