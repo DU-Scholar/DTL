@@ -1,5 +1,8 @@
 <template>
-  <div v-if="showJudgement" class="p-menu c-cards p-cards-list">
+  <div
+    v-if="(placeJudgement && gradeJudgement)"
+    class="p-menu c-cards p-cards-list"
+  >
     <div class="p-container-l">
       <div class="p-card-list-title text_card-title">
         <h3>{{ data.name }}</h3>
@@ -53,11 +56,14 @@ export default {
     }
   },
   computed: {
-    showJudgement() {
+    gradeJudgement() {
       if (this.options.grade === 3) {
         return true
       }
       return this.options.grade === this.data.basicInfo[0].canJoinGrade
+    },
+    placeJudgement() {
+      return true
     },
   },
   async mounted() {
