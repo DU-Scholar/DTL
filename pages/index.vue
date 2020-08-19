@@ -130,7 +130,7 @@ export default {
       device: '',
       options: {
         practice: '',
-        place: '',
+        place: 2,
         people: '',
         grade: 3,
       },
