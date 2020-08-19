@@ -39,10 +39,14 @@
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a class="bt text_button">今出川キャンパス</a>
+              <a class="bt text_button" @click="options.place = 1"
+                >今出川キャンパス</a
+              >
             </li>
             <li>
-              <a class="bt text_button">京田辺キャンンパス</a>
+              <a class="bt text_button" @click="options.place = 2"
+                >京田辺キャンンパス</a
+              >
             </li>
           </ul>
         </div>

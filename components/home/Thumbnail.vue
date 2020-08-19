@@ -63,7 +63,10 @@ export default {
       return this.options.grade === this.data.basicInfo[0].canJoinGrade
     },
     placeJudgement() {
-      return true
+      if (this.options.place === 3) {
+        return true
+      }
+      return this.options.place === this.data.basicInfo[0].place
     },
   },
   async mounted() {
