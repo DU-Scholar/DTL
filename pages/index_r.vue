@@ -24,7 +24,7 @@
             <li>募集回生：新入生のみ</li>
             <li>アピールポイント：テニスのガチ度</li>
             <li>
-              <a id="#" class="bt text_button">詳しく見る</a>
+              <a id="#" class="link-bt text_button">詳しく見る</a>
             </li>
           </ul>
         </div>

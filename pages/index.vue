@@ -2,7 +2,7 @@
   <div class="p-top">
     <div class="p-search-text">検索コマンド</div>
     <div v-if="device === 'pc'" class="p-menu c-cards">
-      <div class="p-menu-bar">
+      <!--<div class="p-menu-bar">
         <ul>
           <li>
             <h2 class="text_search-item-ja">練習頻度</h2>
@@ -21,59 +21,100 @@
             <p class="text_search-item-en">grade</p>
           </li>
         </ul>
-      </div>
+      </div>-->
       <div class="p-menu-list">
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a class="bt text_button">多め</a>
+              <h2 class="text_search-item-ja">練習頻度</h2>
+              <p class="text_search-item-en">practice</p>
             </li>
             <li>
-              <a class="bt text_button">そこそこ</a>
+              <input id="f1" class="bt" type="checkbox" />
+              <label for="f1" class="text_button">多め</label>
             </li>
             <li>
-              <a class="bt text_button">少なめ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="p-menu-list_button">
-          <ul>
-            <li>
-              <a class="bt text_button" @click="options.place = 1"
-                >今出川キャンパス</a
-              >
+              <input id="f2" class="bt" type="checkbox" />
+              <label for="f2" class="text_button">そこそこ</label>
             </li>
             <li>
-              <a class="bt text_button" @click="options.place = 2"
-                >京田辺キャンンパス</a
-              >
+              <input id="f3" class="bt" type="checkbox" />
+              <label for="f3" class="text_button">少なめ</label>
             </li>
           </ul>
         </div>
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a class="bt text_button">大人数</a>
+              <h2 class="text_search-item-ja">活動場所</h2>
+              <p class="text_search-item-en">place</p>
             </li>
             <li>
-              <a class="bt text_button">アットホーム</a>
+              <input
+                id="p1"
+                class="bt"
+                type="checkbox"
+                @click="options.place = 1"
+              />
+              <label for="p1" class="text_button">今出川キャンパス</label>
+            </li>
+            <li>
+              <input
+                id="p2"
+                class="bt"
+                type="checkbox"
+                @click="options.place = 2"
+              />
+              <label for="p2" class="text_button">京田辺キャンパス</label>
             </li>
           </ul>
         </div>
         <div class="p-menu-list_button">
           <ul>
             <li>
-              <a class="bt text_button" @click="options.grade = 1">新入生</a>
+              <h2 class="text_search-item-ja">人数</h2>
+              <p class="text_search-item-en">people</p>
             </li>
             <li>
-              <a class="bt text_button" @click="options.grade = 2">いつでも</a>
+              <input id="n1" class="bt" type="checkbox" />
+              <label for="n1" class="text_button">大人数</label>
+            </li>
+            <li>
+              <input id="n2" class="bt" type="checkbox" />
+              <label for="n2" class="text_button">アットホーム</label>
+            </li>
+          </ul>
+        </div>
+        <div class="p-menu-list_button">
+          <ul>
+            <li>
+              <h2 class="text_search-item-ja">参加可能回生</h2>
+              <p class="text_search-item-en">grade</p>
+            </li>
+            <li>
+              <input
+                id="g1"
+                class="bt"
+                type="checkbox"
+                @click="options.grade = 1"
+              />
+              <label for="g1" class="text_button">新入生</label>
+            </li>
+            <li>
+              <input
+                id="g2"
+                class="bt"
+                type="checkbox"
+                @click="options.grade = 2"
+              />
+              <label for="g2" class="text_button">いつでも</label>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="p-search">
-      <a class="bt text_button">上記の条件で検索</a>
+      <a class="link-bt text_button">上記の条件で検索</a>
     </div>
     <div v-if="device === 'sp'" class="c-cards">
       <div class="p-sp-menu">
@@ -107,7 +148,7 @@
           </select>
         </div>
         <div class="p-search">
-          <a class="bt text_button">上記の条件で検索</a>
+          <a class="link-bt text_button">上記の条件で検索</a>
         </div>
       </div>
     </div>
@@ -172,33 +213,26 @@ export default {
 }
 .p-menu {
   margin-top: 30px;
-  display: flex;
+  padding: 10px 40px;
 }
 ul {
   list-style: none;
 }
-.p-menu-bar {
-  min-width: 17%;
-  text-align: center;
-}
-.p-menu-bar ul {
-  padding-left: 0;
-}
-.p-menu-bar ul > li {
-  text-align: right;
-}
-.p-menu-bar ul > li > h2 {
-  margin-bottom: 6%;
-}
-.p-menu-list {
-  width: 83%;
-  text-align: left;
-}
 .p-menu-list_button ul {
   display: flex;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+.p-menu-list_button ul li {
+  margin: auto 5% auto 0;
+}
+.p-menu-list_button ul li h2 {
+  margin-bottom: 10px;
+  width: 200px;
 }
 .p-search {
   text-align: center;
+  height: 100px;
 }
 .p-container-l {
   width: 35%;
@@ -232,15 +266,13 @@ img {
   margin: 10px 0 0 0;
   text-align: center;
 }
-@media screen and (max-width: 1300px) {
-  .p-menu-bar {
-    min-width: 19%;
-  }
-  .p-menu-list {
-    min-width: 81%;
+/*レスポンシブ*/
+@media screen and (max-width: 1024px) {
+  .p-menu-list_button ul li h2 {
+    margin-bottom: 10px;
+    width: 144px;
   }
 }
-/*レスポンシブ*/
 @media screen and (max-width: 768px) {
   .p-sp-menu {
     padding-top: 1px;
