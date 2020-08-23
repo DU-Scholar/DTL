@@ -1,14 +1,14 @@
 # DTL
+
 ![build](https://github.com/DU-Scholar/DTL/workflows/Nuxtjs%20with%20versioned%20node/badge.svg)
 
-DTL サークル紹介APP
+DTL サークル紹介 APP
 
 ## Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4b0e487b-6c0a-4730-9a22-1a0703f8c36b/deploy-status)](https://app.netlify.com/sites/du-dtl/deploys)
 
 https://du-dtl.netlify.app
-
 
 ## Build Setup
 
