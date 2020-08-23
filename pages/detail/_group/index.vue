@@ -100,7 +100,7 @@ export default {
 .intro-video video {
   width: 55%;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 20px;
   border: solid 6px white;
   outline: none;
   box-shadow: 20px 20px 60px #c9d0d0, -20px -20px 60px #ffffff;
@@ -144,7 +144,7 @@ h3:before {
   float: left;
   margin-top: -9px;
   margin-right: 30px;
-  border-radius: 50%;
+  border-radius: 30px;
   border: solid 4px white;
   box-shadow: 20px 20px 60px #c9d0d0, -10px -10px 50px #ffffff;
 }
