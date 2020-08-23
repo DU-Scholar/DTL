@@ -44,7 +44,7 @@
     </div>
     <div class="d-flex">
       <div>
-        <Sex-chart />
+        <Sex-chart :rate="sexRate" />
         <Faculty-chart />
       </div>
       <Events />
@@ -70,6 +70,7 @@ export default {
   data() {
     return {
       data: '',
+      sexRate: 0,
     }
   },
   // validate({ params }) {
@@ -80,7 +81,8 @@ export default {
     const params = this.$route.params.group
     // データ取得
     await this.fetchData({ name: params })
-    this.data = this.getData()
+    this.data = await this.getData()
+    this.sexRate = this.data.statistics[0].sexRate
   },
   methods: {
     ...dataMapper.mapGetters(['getData']),
