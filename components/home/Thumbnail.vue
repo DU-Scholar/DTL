@@ -9,8 +9,10 @@
       </div>
       <img :src="`/detail/${group}/image1.png`" alt="集合写真" />
       <div class="p-sns">
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
+        <a href="#"><img src="~@/assets/images/Twitter.png" alt="Twitter" /></a>
+        <a href="#"
+          ><img src="~@/assets/images/Instagram.png" alt="Instagram"
+        /></a>
       </div>
     </div>
     <div class="p-container-r text_card-content">
@@ -29,7 +31,7 @@
           <li>アピールポイント：{{ data.appeal }}</li>
           <div class="p-to-detail">
             <router-link :to="`/detail/${data.name}`">
-              <a id="#" class="bt text_button">詳しく見る</a>
+              <a id="#" class="link-bt text_button">詳しく見る</a>
             </router-link>
           </div>
         </ul>
@@ -90,7 +92,15 @@ ul {
   text-align: center;
 }
 .p-sns {
+  margin-top: 5px;
   text-align: center;
+}
+.p-sns a img {
+  width: 40px;
+  border-radius: 0;
+}
+.p-sns a:hover {
+  opacity: 0.6;
 }
 .p-sns a {
   text-decoration: none;
