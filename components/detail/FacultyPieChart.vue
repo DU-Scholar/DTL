@@ -1,5 +1,6 @@
 <template>
   <div class="p-faculty-constitution c-cards text_description-content">
+    <h4>学部構成</h4>
     <p>経済</p>
     <p>商</p>
     <p>政策</p>
@@ -12,3 +13,8 @@
 <script>
 export default {}
 </script>
+<style scoped>
+.p-faculty-constitution {
+  margin: 20px;
+}
+</style>

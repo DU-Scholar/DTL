@@ -42,9 +42,9 @@
         </p>
       </div>
     </div>
-    <div class="d-flex">
-      <div>
-        <Sex-chart :rate="sexRate" />
+    <div class="d-flex p-statistics">
+      <div v-if="data">
+        <Sex-chart :rate="data.statistics[0].sexRate" />
         <Faculty-chart />
       </div>
       <Events />
@@ -65,12 +65,13 @@ export default {
   props: {
     options: {
       type: Object,
+      require: false,
+      default: () => ({}),
     },
   },
   data() {
     return {
       data: '',
-      sexRate: 0,
     }
   },
   // validate({ params }) {
@@ -186,7 +187,10 @@ h3 {
     overflow: unset;
   }
 }
-
+.p-statistics {
+  justify-content: center;
+  align-items: center;
+}
 /* 動画のレスポンシブ対応 */
 @media (max-width: 530px) {
   .intro-video video {

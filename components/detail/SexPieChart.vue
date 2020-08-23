@@ -38,6 +38,13 @@ export default {
       },
     }
   },
+  watch: {
+    rate: (rate) => {
+      console.error(rate)
+      // this.datas.datasets[0].data[0] = rate
+      // this.datas.datasets[0].data[1] = 1 - rate
+    },
+  },
   mounted() {
     this.renderChart(this.datas, this.options)
   },

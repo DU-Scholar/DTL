@@ -107,7 +107,7 @@
 .p-annualEvents {
   padding: 20px;
   margin: 20px;
-  width: 50vw;
+  width: 40vw;
   height: auto;
 }
 .p-annualEvents span.mon {
