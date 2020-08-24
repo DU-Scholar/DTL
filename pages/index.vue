@@ -29,18 +29,44 @@
               <h2 class="text_search-item-ja">練習頻度</h2>
               <p class="text_search-item-en">practice</p>
             </li>
-            <li>
-              <input id="f1" class="bt" type="checkbox" />
-              <label for="f1" class="text_button">多め</label>
-            </li>
-            <li>
-              <input id="f2" class="bt" type="checkbox" />
-              <label for="f2" class="text_button">そこそこ</label>
-            </li>
-            <li>
-              <input id="f3" class="bt" type="checkbox" />
-              <label for="f3" class="text_button">少なめ</label>
-            </li>
+            <form class="p-menu-list_options">
+              <li>
+                <input
+                  id="f1"
+                  v-model="options.practice"
+                  class="bt"
+                  type="radio"
+                  name="practice"
+                  value="many"
+                  @click="handleFrequency('many')"
+                />
+                <label for="f1" class="text_button">多め</label>
+              </li>
+              <li>
+                <input
+                  id="f2"
+                  v-model="options.practice"
+                  class="bt"
+                  type="radio"
+                  name="practice"
+                  value="normal"
+                  @click="handleFrequency('normal')"
+                />
+                <label for="f2" class="text_button">そこそこ</label>
+              </li>
+              <li>
+                <input
+                  id="f3"
+                  v-model="options.practice"
+                  class="bt"
+                  type="radio"
+                  name="practice"
+                  value="less"
+                  @click="handleFrequency('less')"
+                />
+                <label for="f3" class="text_button">少なめ</label>
+              </li>
+            </form>
           </ul>
         </div>
         <div class="p-menu-list_button">
@@ -192,6 +218,11 @@ export default {
         this.device = 'pc'
       }
     },
+    handleFrequency(val) {
+      if (this.options.practice === val) {
+        this.options.practice = false
+      }
+    },
   },
 }
 </script>
@@ -229,6 +260,9 @@ ul {
 .p-menu-list_button ul li h2 {
   margin-bottom: 10px;
   width: 200px;
+}
+.p-menu-list_options {
+  display: flex;
 }
 .p-search {
   text-align: center;

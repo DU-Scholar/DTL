@@ -9,55 +9,55 @@
   background: #E5F2F3;
   color: #7F7F7F;
   border-radius: 30px;
-  box-shadow: 15px 15px 30px #c4cbcb, 
+  box-shadow: 15px 15px 30px #c4cbcb,
   -15px -15px 30px #ffffff;
   cursor: pointer;
-  border-bottom: solid 4px #d6d3d3;                 
+  border-bottom: solid 4px #d6d3d3;
   border-right: solid 2px #d6d3d3;
 }
 
 .link-bt:active {
    transform: translateY(4px);
    background-color: #d3dfdf;
-   box-shadow: 1px 1px 2px #c4cbcb, 
+   box-shadow: 1px 1px 2px #c4cbcb,
    -1px -1px 2px #ffffff;
    border-bottom: none;
-   border-right: none;     
+   border-right: none;
 }
-input.bt[type="checkbox"] {
-  width: 70px;      
-  height: 30px;     
-  vertical-align: top;       
-  display: none;      
+input.bt[type="radio"] {
+  width: 70px;
+  height: 30px;
+  vertical-align: top;
+  display: none;
 }
-input.bt[type="checkbox"] + label{
-  padding: 8px 10px;                             
-  border-radius : 30px;     
-  border-bottom: solid 6px #d6d3d3;                 
+input.bt[type="radio"] + label{
+  padding: 8px 10px;
+  border-radius : 30px;
+  border-bottom: solid 6px #d6d3d3;
   border-right: solid 4px #d6d3d3;
-  background: #E5F2F3;  
-  box-shadow: 15px 15px 30px #c4cbcb, 
-  -8px -5px 30px #ffffff;             
-  cursor: pointer;                         
-  display: inline-block;   
-  width: 200px; 
+  background: #E5F2F3;
+  box-shadow: 15px 15px 30px #c4cbcb,
+  -8px -5px 30px #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
   text-align: center;
 }
-input.bt[type="checkbox"]:checked + label {
-  background    : #d9d9d9;        
+input.bt[type="radio"]:checked + label {
+  background    : #d9d9d9;
   border-bottom: none;
-  border-right: none;     
+  border-right: none;
   transform: translateY(6px);
-  box-shadow: 1px 1px 2px #c4cbcb, 
+  box-shadow: 1px 1px 2px #c4cbcb,
    -1px -1px 30px #ffffff;
 }
 @media screen and (max-width: 1024px) {
-  input.bt[type="checkbox"] + label{
+  input.bt[type="radio"] + label{
     width: 150px;
   }
 }
 @media screen and (max-width: 768px) {
-  input.bt[type="checkbox"] + label{
+  input.bt[type="radio"] + label{
     width: 95px;
   }
 }
