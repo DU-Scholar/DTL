@@ -55,7 +55,7 @@
 import { dataMapper } from '../../../store/dataConstructor'
 import SexChart from '@/components/detail/SexPieChart'
 import FacultyChart from '@/components/detail/FacultyPieChart'
-import Events from '@/components/detail/AnnalEvents'
+import Events from '@/components/detail/Events'
 export default {
   components: {
     Events,
