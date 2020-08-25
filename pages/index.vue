@@ -82,8 +82,8 @@
                 class="bt"
                 type="radio"
                 name="place"
-                value="imadegawa"
-                @click="handlePlace('imadegawa')"
+                value="1"
+                @click="handlePlace('1')"
               />
               <label for="p1" class="text_button">今出川キャンパス</label>
             </li>
@@ -94,8 +94,8 @@
                 class="bt"
                 type="radio"
                 name="place"
-                value="kyoutanabe"
-                @click="handlePlace('kyoutanabe')"
+                value="2"
+                @click="handlePlace('2')"
               />
               <label for="p2" class="text_button">京田辺キャンパス</label>
             </li>
@@ -114,8 +114,8 @@
                 class="bt"
                 type="radio"
                 name="number"
-                value="many"
-                @click="handleNumber('many')"
+                value="1"
+                @click="handleNumber('1')"
               />
               <label for="n1" class="text_button">大人数</label>
             </li>
@@ -126,8 +126,8 @@
                 class="bt"
                 type="radio"
                 name="number"
-                value="less"
-                @click="handleNumber('less')"
+                value="2"
+                @click="handleNumber('2')"
               />
               <label for="n2" class="text_button">アットホーム</label>
             </li>
@@ -146,8 +146,8 @@
                 class="bt"
                 type="radio"
                 name="grade"
-                value="new"
-                @click="handleGrade('new')"
+                value="1"
+                @click="handleGrade('1')"
               />
               <label for="g1" class="text_button">新入生</label>
             </li>
@@ -158,8 +158,8 @@
                 class="bt"
                 type="radio"
                 name="grade"
-                value="exist"
-                @click="handleGrade('exist')"
+                value="2"
+                @click="handleGrade('2')"
               />
               <label for="g2" class="text_button">いつでも</label>
             </li>
@@ -225,9 +225,9 @@ export default {
       device: '',
       options: {
         practice: '',
-        place: 2,
+        place: false,
         people: '',
-        grade: 3,
+        grade: false,
       },
     }
   },

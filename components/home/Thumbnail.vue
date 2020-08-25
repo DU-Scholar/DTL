@@ -59,16 +59,16 @@ export default {
   },
   computed: {
     gradeJudgement() {
-      if (this.options.grade === 3 || this.options.grade === 2) {
+      if (this.options.grade === false || this.options.grade === 2) {
         return true
       }
-      return this.options.grade === this.data.basicInfo[0].canJoinGrade
+      return this.options.grade === String(this.data.basicInfo[0].canJoinGrade)
     },
     placeJudgement() {
-      if (this.options.place === 3 || this.data.basicInfo[0].place === 3) {
+      if (this.options.place === false || this.data.basicInfo[0].place === 3) {
         return true
       }
-      return this.options.place === this.data.basicInfo[0].place
+      return this.options.place === String(this.data.basicInfo[0].place)
     },
   },
   async mounted() {
