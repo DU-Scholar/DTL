@@ -78,18 +78,24 @@
             <li>
               <input
                 id="p1"
+                v-model="options.place"
                 class="bt"
-                type="checkbox"
-                @click="options.place = 1"
+                type="radio"
+                name="place"
+                value="imadegawa"
+                @click="handlePlace('imadegawa')"
               />
               <label for="p1" class="text_button">今出川キャンパス</label>
             </li>
             <li>
               <input
                 id="p2"
+                v-model="options.place"
                 class="bt"
-                type="checkbox"
-                @click="options.place = 2"
+                type="radio"
+                name="place"
+                value="kyoutanabe"
+                @click="handlePlace('kyoutanabe')"
               />
               <label for="p2" class="text_button">京田辺キャンパス</label>
             </li>
@@ -102,11 +108,27 @@
               <p class="text_search-item-en">people</p>
             </li>
             <li>
-              <input id="n1" class="bt" type="checkbox" />
+              <input
+                id="n1"
+                v-model="options.number"
+                class="bt"
+                type="radio"
+                name="number"
+                value="many"
+                @click="handleNumber('many')"
+              />
               <label for="n1" class="text_button">大人数</label>
             </li>
             <li>
-              <input id="n2" class="bt" type="checkbox" />
+              <input
+                id="n2"
+                v-model="options.number"
+                class="bt"
+                type="radio"
+                name="number"
+                value="less"
+                @click="handleNumber('less')"
+              />
               <label for="n2" class="text_button">アットホーム</label>
             </li>
           </ul>
@@ -120,18 +142,24 @@
             <li>
               <input
                 id="g1"
+                v-model="options.grade"
                 class="bt"
-                type="checkbox"
-                @click="options.grade = 1"
+                type="radio"
+                name="grade"
+                value="new"
+                @click="handleGrade('new')"
               />
               <label for="g1" class="text_button">新入生</label>
             </li>
             <li>
               <input
                 id="g2"
+                v-model="options.grade"
                 class="bt"
-                type="checkbox"
-                @click="options.grade = 2"
+                type="radio"
+                name="grade"
+                value="exist"
+                @click="handleGrade('exist')"
               />
               <label for="g2" class="text_button">いつでも</label>
             </li>
@@ -221,6 +249,21 @@ export default {
     handleFrequency(val) {
       if (this.options.practice === val) {
         this.options.practice = false
+      }
+    },
+    handlePlace(val) {
+      if (this.options.place === val) {
+        this.options.place = false
+      }
+    },
+    handleNumber(val) {
+      if (this.options.number === val) {
+        this.options.number = false
+      }
+    },
+    handleGrade(val) {
+      if (this.options.grade === val) {
+        this.options.grade = false
       }
     },
   },
