@@ -9,8 +9,10 @@
       </div>
       <img :src="`/detail/${group}/image1.png`" alt="集合写真" />
       <div class="p-sns">
-        <a href="#"><img src="~@/assets/images/Twitter.png" alt="Twitter" /></a>
-        <a href="#"
+        <a :href="`${data.Twitter}`"
+          ><img src="~@/assets/images/Twitter.png" alt="Twitter"
+        /></a>
+        <a :href="`${data.Instagram}`"
           ><img src="~@/assets/images/Instagram.png" alt="Instagram"
         /></a>
       </div>
