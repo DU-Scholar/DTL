@@ -16,5 +16,6 @@ export default {}
 <style scoped>
 .p-faculty-constitution {
   margin: 20px;
+  text-align: center;
 }
 </style>

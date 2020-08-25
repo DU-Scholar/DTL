@@ -42,12 +42,12 @@
         </p>
       </div>
     </div>
-    <div class="d-flex p-statistics">
+    <div class="d-flex p-statistics content">
       <div v-if="data">
         <Sex-chart :rate="data.statistics[0].sexRate" />
         <Faculty-chart />
       </div>
-      <Events />
+      <Events :events="data.Event" />
     </div>
   </div>
 </template>

@@ -2,26 +2,6 @@
   <div class="p-top">
     <div class="p-search-text">検索コマンド</div>
     <div v-if="device === 'pc'" class="p-menu c-cards">
-      <!--<div class="p-menu-bar">
-        <ul>
-          <li>
-            <h2 class="text_search-item-ja">練習頻度</h2>
-            <p class="text_search-item-en">practice</p>
-          </li>
-          <li>
-            <h2 class="text_search-item-ja">活動場所</h2>
-            <p class="text_search-item-en">place</p>
-          </li>
-          <li>
-            <h2 class="text_search-item-ja">人数</h2>
-            <p class="text_search-item-en">people</p>
-          </li>
-          <li>
-            <h2 class="text_search-item-ja">参加可能回生</h2>
-            <p class="text_search-item-en">grade</p>
-          </li>
-        </ul>
-      </div>-->
       <div class="p-menu-list">
         <div class="p-menu-list_button">
           <ul>
@@ -166,9 +146,9 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="p-search">
-      <a class="link-bt text_button">上記の条件で検索</a>
+      <div class="p-search">
+        <a class="link-bt text_button">上記の条件で検索</a>
+      </div>
     </div>
     <div v-if="device === 'sp'" class="c-cards">
       <div class="p-sp-menu">
@@ -353,6 +333,7 @@ img {
 @media screen and (max-width: 768px) {
   .p-sp-menu {
     padding-top: 1px;
+    margin-bottom: 20px;
   }
   .p-container-l {
     width: 47%;

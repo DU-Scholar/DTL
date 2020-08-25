@@ -1,27 +1,31 @@
 <template>
-  <div class="p-Events c-cards">
-    <div>年間行事</div>
-    <ul>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-      <li>テキスト</li>
-    </ul>
+  <div class="p-Events c-cards text_description-content">
+    <h4>年間行事</h4>
+    <div v-for="(event, idx) in events" :key="idx">
+      <ul>
+        <li>{{ event }}</li>
+      </ul>
+      <p v-if="!event">年間行事データなし</p>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    events: {
+      type: Array,
+      default: () => [],
+    },
+  },
+}
+</script>
 <style scoped lang="scss">
 @import 'assets/scss/mixins';
 .p-Events {
   width: 100%;
   height: 100%;
   padding: 30px;
+  text-align: center;
 }
 .p-Events ul {
   padding-left: 0;
