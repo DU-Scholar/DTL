@@ -7,8 +7,18 @@
     <div class="header-list-wrapper">
       <ul class="header-list">
         <li><a class="text_header--disabled" href="">協賛企業</a></li>
-        <li><a class="text_header--disabled" href="">Twitter</a></li>
-        <li><a class="text_header--disabled" href="">Instagram</a></li>
+        <li>
+          <a class="text_header--disabled" href="https://twitter.com/dtl_staff"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a
+            class="text_header--disabled"
+            href="https://www.instagram.com/doshisha_tennis_league/"
+            >Instagram</a
+          >
+        </li>
       </ul>
     </div>
   </div>
