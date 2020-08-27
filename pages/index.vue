@@ -97,7 +97,7 @@
                 value="1"
                 @click="handlePeople('1')"
               />
-              <label for="n1" class="text_button">大人数</label>
+              <label for="n1" class="text_button">賑やか</label>
             </li>
             <li>
               <input

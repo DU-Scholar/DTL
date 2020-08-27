@@ -9,10 +9,10 @@
       </div>
       <img :src="`/detail/${group}/samnail.png`" alt="集合写真" />
       <div class="p-sns">
-        <a :href="`${data.Twitter}`"
+        <a v-if="data.Twitter" :href="`${data.Twitter}`"
           ><img src="~@/assets/images/Twitter.png" alt="Twitter"
         /></a>
-        <a :href="`${data.Instagram}`"
+        <a v-if="data.Instagram" :href="`${data.Instagram}`"
           ><img src="~@/assets/images/Instagram.png" alt="Instagram"
         /></a>
       </div>

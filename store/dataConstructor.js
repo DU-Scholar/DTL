@@ -52,13 +52,13 @@ export default {
       if (name === 'インペリアル') {
         state.data = inperiaru
       }
-      if (name === 'レモン') {
+      if (name === 'レスカ') {
         state.data = lemon
       }
       if (name === 'ノービス') {
         state.data = novis
       }
-      if (name === 'ピーナッツ') {
+      if (name === 'ピーナツ') {
         state.data = peanuts
       }
       if (name === 'レジーナ') {

@@ -16,7 +16,7 @@ export default {
         datasets: [
           {
             borderWidth: 0,
-            backgroundColor: ['#b6c6e3', '#4074b0'],
+            backgroundColor: ['#4074b0', '#b6c6e3'],
             data: [this.rate * 100, (1 - this.rate) * 100],
           },
         ],

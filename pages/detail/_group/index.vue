@@ -89,7 +89,7 @@ export default {
     // データ取得
     await this.fetchData({ name: params })
     this.data = await this.getData()
-    this.sexRate = this.data.statistics[0].sexRate
+    // this.sexRate = this.data.statistics[0].sexRate
   },
   methods: {
     ...dataMapper.mapGetters(['getData']),
