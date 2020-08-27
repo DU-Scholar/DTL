@@ -6,7 +6,9 @@
     </div>
     <div class="header-list-wrapper">
       <ul class="header-list">
-        <li><a class="text_header--disabled" href="">協賛企業</a></li>
+        <li v-if="hidden">
+          <a class="text_header--disabled" href="">協賛企業</a>
+        </li>
         <li>
           <a class="text_header--disabled" href="https://twitter.com/dtl_staff"
             >Twitter</a
@@ -24,7 +26,13 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      hidden: false,
+    }
+  },
+}
 </script>
 <style lang="scss" scoped>
 div.c-header {

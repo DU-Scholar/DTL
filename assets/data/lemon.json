@@ -31,7 +31,8 @@
     "frequency": "",
     "place": 1,
     "members": 40,
-    "canJoinGrade":1
+    "canJoinGrade":1,
+    "practice": 3
   }],
   "statistics": [{
     "sexRate": 0.5,
@@ -41,4 +42,3 @@
   "Instagram":"https://instagram.com/lemon_squash2020/",
   "appeal": "みんな家族"
   }
-  

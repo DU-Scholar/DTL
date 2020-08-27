@@ -19,19 +19,14 @@
     }
   ],
   "Event": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
     ""
   ],
   "basicInfo": [{
     "frequency": "",
     "place": 3,
     "members": 60,
-    "canJoinGrade":2
+    "canJoinGrade":2,
+    "practice": 1
   }],
   "statistics": [{
     "sexRate": 0.5,

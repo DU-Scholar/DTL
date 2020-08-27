@@ -17,8 +17,8 @@
                   class="bt"
                   type="radio"
                   name="practice"
-                  value="many"
-                  @click="handleFrequency('many')"
+                  value="1"
+                  @click="handleFrequency('1')"
                 />
                 <label for="f1" class="text_button">多め</label>
               </li>
@@ -29,8 +29,8 @@
                   class="bt"
                   type="radio"
                   name="practice"
-                  value="normal"
-                  @click="handleFrequency('normal')"
+                  value="2"
+                  @click="handleFrequency('2')"
                 />
                 <label for="f2" class="text_button">そこそこ</label>
               </li>
@@ -41,8 +41,8 @@
                   class="bt"
                   type="radio"
                   name="practice"
-                  value="less"
-                  @click="handleFrequency('less')"
+                  value="3"
+                  @click="handleFrequency('3')"
                 />
                 <label for="f3" class="text_button">少なめ</label>
               </li>
@@ -90,24 +90,24 @@
             <li>
               <input
                 id="n1"
-                v-model="options.number"
+                v-model="options.people"
                 class="bt"
                 type="radio"
-                name="number"
+                name="people"
                 value="1"
-                @click="handleNumber('1')"
+                @click="handlePeople('1')"
               />
               <label for="n1" class="text_button">大人数</label>
             </li>
             <li>
               <input
                 id="n2"
-                v-model="options.number"
+                v-model="options.people"
                 class="bt"
                 type="radio"
-                name="number"
+                name="people"
                 value="2"
-                @click="handleNumber('2')"
+                @click="handlePeople('2')"
               />
               <label for="n2" class="text_button">アットホーム</label>
             </li>
@@ -146,7 +146,7 @@
           </ul>
         </div>
       </div>
-      <div class="p-search">
+      <div v-if="isDisplay" class="p-search">
         <a class="link-bt text_button">上記の条件で検索</a>
       </div>
     </div>
@@ -203,10 +203,11 @@ export default {
     return {
       data: groups,
       device: '',
+      isDisplay: false,
       options: {
-        practice: '',
+        practice: false,
         place: false,
-        people: '',
+        people: false,
         grade: false,
       },
     }
@@ -236,9 +237,9 @@ export default {
         this.options.place = false
       }
     },
-    handleNumber(val) {
-      if (this.options.number === val) {
-        this.options.number = false
+    handlePeople(val) {
+      if (this.options.people === val) {
+        this.options.people = false
       }
     },
     handleGrade(val) {

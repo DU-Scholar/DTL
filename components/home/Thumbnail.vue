@@ -1,13 +1,13 @@
 <template>
   <div
-    v-if="(placeJudgement && gradeJudgement)"
+    v-if="(placeJudgement && gradeJudgement && practiceJudgement && peopleJudgement)"
     class="p-menu c-cards p-cards-list"
   >
     <div class="p-container-l">
       <div class="p-card-list-title text_card-title">
         <h3>{{ data.name }}</h3>
       </div>
-      <img :src="`/detail/${group}/image1.png`" alt="集合写真" />
+      <img :src="`/detail/${group}/samnail.png`" alt="集合写真" />
       <div class="p-sns">
         <a :href="`${data.Twitter}`"
           ><img src="~@/assets/images/Twitter.png" alt="Twitter"
@@ -20,7 +20,9 @@
     <div class="p-container-r text_card-content">
       <div>
         <ul>
-          <li>練習頻度：週６回</li>
+          <li v-if="data.basicInfo[0].practice === 1">練習頻度：多め</li>
+          <li v-if="data.basicInfo[0].practice === 2">練習頻度：そこそこ</li>
+          <li v-if="data.basicInfo[0].practice === 3">練習頻度：少なめ</li>
           <li v-if="data.basicInfo[0].place === 1">活動場所：今出川</li>
           <li v-if="data.basicInfo[0].place === 2">活動場所：京田辺</li>
           <li v-if="data.basicInfo[0].place === 3">活動場所：両方</li>
@@ -50,6 +52,7 @@ export default {
     },
     options: {
       type: Object,
+      default: () => {},
     },
   },
   data() {
@@ -60,17 +63,32 @@ export default {
     }
   },
   computed: {
-    gradeJudgement() {
-      if (this.options.grade === false || this.options.grade === 2) {
+    practiceJudgement() {
+      if (this.options.practice === false) {
         return true
       }
-      return this.options.grade === String(this.data.basicInfo[0].canJoinGrade)
+      return this.options.practice === String(this.data.basicInfo[0].practice)
     },
     placeJudgement() {
       if (this.options.place === false || this.data.basicInfo[0].place === 3) {
         return true
       }
       return this.options.place === String(this.data.basicInfo[0].place)
+    },
+    peopleJudgement() {
+      if (this.options.people === false) {
+        return true
+      }
+      if (this.options.people === '1' && this.data.basicInfo[0].members > 80) {
+        return true
+      }
+      return this.options.people === '2' && this.data.basicInfo[0].members <= 80
+    },
+    gradeJudgement() {
+      if (this.options.grade === false || this.options.grade === 2) {
+        return true
+      }
+      return this.options.grade === String(this.data.basicInfo[0].canJoinGrade)
     },
   },
   async mounted() {

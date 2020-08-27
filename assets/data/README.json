@@ -36,7 +36,9 @@
     //会員数
     "members": 99,
     //参加可能回生：1 = 新入生, 2 = いつでも
-    "canJoinGrade":1
+    "canJoinGrade":1,
+    //練習頻度：1 = 多め, 2 = そこそこ, 3 = 少なめ
+    "practice": 1
   }],
   "statistics": [{
     // 男子に合わす

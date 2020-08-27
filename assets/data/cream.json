@@ -29,7 +29,8 @@
   "frequency": "",
   "place": 1,
   "members": 98,
-  "canJoinGrade":2
+  "canJoinGrade":2,
+  "practice": 2
 }],
 "statistics": [{
   "sexRate": 0.4,
