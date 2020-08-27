@@ -55,6 +55,9 @@
         <a id="#" class="link-bt text_button">お問い合わせ</a>
       </div>
     </div>
+    <div class="back">
+      <a href="/" class="link-bt text_button">検索画面へ戻る</a>
+    </div>
   </div>
 </template>
 <script>

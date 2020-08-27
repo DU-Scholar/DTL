@@ -1,7 +1,9 @@
 <template>
   <div class="c-header">
     <div class="logo-wrapper">
-      <h1 class="text_header--active">DTL <br class="on_sp" />NAVI</h1>
+      <a href="/">
+        <h1 class="text_header--active">DTL <br class="on_sp" />NAVI</h1>
+      </a>
       <img src="../assets/images/headerImage.png" />
     </div>
     <div class="header-list-wrapper">
@@ -42,11 +44,14 @@ div.c-header {
   div.logo-wrapper {
     display: flex;
     flex-direction: row;
-    h1 {
-      font-size: 50px;
-      margin-left: 20px;
-      br.on_sp {
-        display: none;
+    a {
+      text-decoration: none;
+      h1 {
+        font-size: 50px;
+        margin-left: 20px;
+        br.on_sp {
+          display: none;
+        }
       }
     }
     img {
