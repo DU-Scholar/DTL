@@ -33,7 +33,7 @@
 }],
 "statistics": [{
   "sexRate": 0.5,
-  "gakubu": []
+  "gakubu": [1,2,3,4,5,9,10,15]
 }],
 "Twitter":"https://twitter.com/2020Flyspeck",
 "Instagram":"https://instagram.com/flyspeck_2020",

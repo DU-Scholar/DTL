@@ -33,9 +33,7 @@
         :key="idx"
         class="content"
       >
-        <h3 class="text_description-subtitle">
-          {{ element['title'] }}
-        </h3>
+        <h3 class="text_description-subtitle">{{ element['title'] }}</h3>
         <img class="pic_gather" :src="element['image']" alt="集合写真" />
         <p class="text_description-content">
           <span v-html="element['about']"></span>
@@ -48,6 +46,14 @@
         <Faculty-chart />
       </div>
       <Events :events="data.Event" />
+    </div>
+    <div class="d-flex p-form">
+      <div class="p-pdf">
+        <a id="#" class="link-bt text_button">新歓情報</a>
+      </div>
+      <div class="p-gform">
+        <a id="#" class="link-bt text_button">お問い合わせ</a>
+      </div>
     </div>
   </div>
 </template>
@@ -127,9 +133,20 @@ h3:before {
   flex-direction: row;
   margin: auto;
 }
+.p-form {
+  width: 100%;
+}
+.p-pdf,
+.p-gform {
+  width: 50%;
+}
 @media screen and (max-width: 480px) {
   .d-flex {
     flex-direction: column;
+  }
+  .p-pdf,
+  .p-gform {
+    width: 100%;
   }
 }
 .info {
@@ -166,7 +183,6 @@ h3 {
 .content {
   margin-bottom: 25px;
 }
-
 /* 画像とテキストのバランス調整のレスポンシブ対応 */
 @media (max-width: 700px) {
   h3 {
