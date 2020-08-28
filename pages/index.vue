@@ -153,30 +153,30 @@
     <div v-if="device === 'sp'" class="c-cards">
       <div class="p-sp-menu">
         <div class="bt_select sp_button">
-          <select v-model="options.practice" class="text_button" required>
-            <option value hidden>練習頻度</option>
+          <select v-model="options.practice" class="text_button">
+            <option value="">練習頻度</option>
             <option value="1">多め</option>
             <option value="2">そこそこ</option>
             <option value="3">少なめ</option>
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select v-model="options.place" class="text_button" required>
-            <option value hidden>活動場所</option>
+          <select v-model="options.place" class="text_button">
+            <option value="">活動場所</option>
             <option value="1">今出川キャンパス</option>
             <option value="2">京田辺キャンパス</option>
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select v-model="options.people" class="text_button" required>
-            <option value hidden>人数</option>
+          <select v-model="options.people" class="text_button">
+            <option value="">人数</option>
             <option value="1">大人数</option>
             <option value="2">アットホーム</option>
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select v-model="options.grade" class="text_button" required>
-            <option value hidden>参加可能回生</option>
+          <select v-model="options.grade" class="text_button">
+            <option value="">参加可能回生</option>
             <option value="1">新入生</option>
             <option value="2">いつでも</option>
           </select>
@@ -205,10 +205,10 @@ export default {
       device: '',
       isDisplay: false,
       options: {
-        practice: false,
-        place: false,
-        people: false,
-        grade: false,
+        practice: '',
+        place: '',
+        people: '',
+        grade: '',
       },
     }
   },
@@ -229,22 +229,22 @@ export default {
     },
     handleFrequency(val) {
       if (this.options.practice === val) {
-        this.options.practice = false
+        this.options.practice = ''
       }
     },
     handlePlace(val) {
       if (this.options.place === val) {
-        this.options.place = false
+        this.options.place = ''
       }
     },
     handlePeople(val) {
       if (this.options.people === val) {
-        this.options.people = false
+        this.options.people = ''
       }
     },
     handleGrade(val) {
       if (this.options.grade === val) {
-        this.options.grade = false
+        this.options.grade = ''
       }
     },
   },

@@ -64,19 +64,19 @@ export default {
   },
   computed: {
     practiceJudgement() {
-      if (this.options.practice === false) {
+      if (this.options.practice === '') {
         return true
       }
       return this.options.practice === String(this.data.basicInfo[0].practice)
     },
     placeJudgement() {
-      if (this.options.place === false || this.data.basicInfo[0].place === 3) {
+      if (this.options.place === '' || this.data.basicInfo[0].place === 3) {
         return true
       }
       return this.options.place === String(this.data.basicInfo[0].place)
     },
     peopleJudgement() {
-      if (this.options.people === false) {
+      if (this.options.people === '') {
         return true
       }
       if (this.options.people === '1' && this.data.basicInfo[0].members > 80) {
@@ -85,7 +85,7 @@ export default {
       return this.options.people === '2' && this.data.basicInfo[0].members <= 80
     },
     gradeJudgement() {
-      if (this.options.grade === false || this.options.grade === 2) {
+      if (this.options.grade === '' || this.options.grade === 2) {
         return true
       }
       return this.options.grade === String(this.data.basicInfo[0].canJoinGrade)
