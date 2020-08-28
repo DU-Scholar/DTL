@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="back">
-      <a href="/" class="link-bt text_button">検索画面へ戻る</a>
+      <RouterLink to="/" class="link-bt text_button">検索画面へ戻る</RouterLink>
     </div>
   </div>
 </template>
