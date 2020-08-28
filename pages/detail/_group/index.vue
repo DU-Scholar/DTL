@@ -44,8 +44,16 @@
       </div>
     </div>
     <div class="d-flex p-statistics content">
-      <div v-if="data">
-        <Sex-chart :rate="data.statistics[0].sexRate" />
+      <div v-if="data" class="p-statistics__right">
+        <div v-if="data.statistics[0].sexRate">
+          <Sex-chart :rate="data.statistics[0].sexRate" />
+        </div>
+        <div
+          v-if="!data.statistics[0].sexRate"
+          class="text_description-content"
+        >
+          ※性別データなし
+        </div>
         <Faculty-chart :faculties="data.statistics[0].gakubu" />
       </div>
       <Events :events="data.Event" />
@@ -104,10 +112,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '@/assets/scss/mixins';
 .p-detail {
   margin: 0;
   background-color: #e5f2f3;
   text-align: center;
+}
+.p-statistics__right {
+  width: 40%;
 }
 .intro-pic {
   width: 50%;
@@ -224,6 +236,14 @@ h3 {
     border-radius: 30px;
     border: solid 4px white;
     outline: none;
+  }
+}
+@media (max-width: 768px) {
+  .d-flex {
+    display: block;
+  }
+  .p-statistics__right {
+    width: 100%;
   }
 }
 </style>
