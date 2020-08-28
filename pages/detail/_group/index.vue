@@ -60,7 +60,10 @@
     </div>
     <div class="d-flex p-form">
       <div class="p-pdf">
-        <a id="#" class="link-bt text_button">新歓情報</a>
+        <a @click="handleNone" id="#" class="link-bt text_button">新歓情報</a>
+        <p v-if="!isBiradisplay" class="text_description-content">
+          現在ビラはダウンロードできません
+        </p>
       </div>
       <div class="p-gform">
         <a id="#" class="link-bt text_button">お問い合わせ</a>
@@ -92,6 +95,8 @@ export default {
   data() {
     return {
       data: '',
+      isBiraNone: true,
+      isBiradisplay: true,
     }
   },
   // validate({ params }) {
@@ -108,6 +113,13 @@ export default {
   methods: {
     ...dataMapper.mapGetters(['getData']),
     ...dataMapper.mapActions(['fetchData']),
+    handleNone() {
+      if (this.isBiraNone) {
+        this.isBiradisplay = false
+        return true
+      }
+      this.isBiradisplay = true
+    },
   },
 }
 </script>
