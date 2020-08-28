@@ -153,7 +153,7 @@
     <div v-if="device === 'sp'" class="c-cards">
       <div class="p-sp-menu">
         <div class="bt_select sp_button">
-          <select class="text_button" required>
+          <select v-model="options.practice" class="text_button" required>
             <option value hidden>練習頻度</option>
             <option value="1">多め</option>
             <option value="2">そこそこ</option>
@@ -161,21 +161,21 @@
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select class="text_button" required>
+          <select v-model="options.place" class="text_button" required>
             <option value hidden>活動場所</option>
             <option value="1">今出川キャンパス</option>
             <option value="2">京田辺キャンパス</option>
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select class="text_button" required>
+          <select v-model="options.people" class="text_button" required>
             <option value hidden>人数</option>
             <option value="1">大人数</option>
             <option value="2">アットホーム</option>
           </select>
         </div>
         <div class="bt_select sp_button">
-          <select class="text_button" required>
+          <select v-model="options.grade" class="text_button" required>
             <option value hidden>参加可能回生</option>
             <option value="1">新入生</option>
             <option value="2">いつでも</option>
