@@ -140,7 +140,7 @@ export default {
 .intro-video video {
   width: 55%;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 50px;
   border: solid 6px white;
   outline: none;
   box-shadow: 20px 20px 60px #c9d0d0, -20px -20px 60px #ffffff;
