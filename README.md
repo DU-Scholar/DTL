@@ -26,3 +26,20 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## 学部番号振り
+1 経済
+2 経済
+3 政策
+4 法
+5 社会
+6 文学
+7 神学
+8 文化情報
+9 理工
+10 生命医科
+11 スポ健
+12 心理
+13 グロコミ
+14 グロ地
+15 その他
