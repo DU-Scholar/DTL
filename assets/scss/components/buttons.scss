@@ -19,8 +19,8 @@
 .link-bt:active {
    transform: translateY(4px);
    background-color: #d3dfdf;
-   box-shadow: 1px 1px 2px #c4cbcb,
-   -1px -1px 2px #ffffff;
+   box-shadow: 15px 15px 30px #c4cbcb,
+   -8px -5px 30px #ffffff;
    border-bottom: none;
    border-right: none;
 }
@@ -48,8 +48,9 @@ input.bt[type="radio"]:checked + label {
   border-bottom: none;
   border-right: none;
   transform: translateY(6px);
-  box-shadow: 1px 1px 2px #c4cbcb,
-   -1px -1px 30px #ffffff;
+  background: #e9f1f1;
+  box-shadow: inset 8px 8px 16px #b8bebe, 
+            inset -8px -8px 16px #ffffff;
 }
 @media screen and (max-width: 1024px) {
   input.bt[type="radio"] + label{
