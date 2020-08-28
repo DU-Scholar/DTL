@@ -5,7 +5,7 @@
       <h1>{{ data.name }}</h1>
     </div>
 
-    <div class="intro-video">
+    <div v-if="data.movie" class="intro-video">
       <video
         autoplay
         muted
@@ -14,6 +14,9 @@
         :src="data.movie"
         controls
       ></video>
+    </div>
+    <div v-if="!data.movie && data">
+      <img class="intro-pic" :src="data.descriptions[0].image" />
     </div>
     <div class="intro">
       <div class="content">
@@ -43,7 +46,7 @@
     <div class="d-flex p-statistics content">
       <div v-if="data">
         <Sex-chart :rate="data.statistics[0].sexRate" />
-        <Faculty-chart />
+        <Faculty-chart :faculties="data.statistics[0].gakubu" />
       </div>
       <Events :events="data.Event" />
     </div>
@@ -106,7 +109,10 @@ export default {
   background-color: #e5f2f3;
   text-align: center;
 }
-
+.intro-pic {
+  width: 50%;
+  height: 50%;
+}
 .intro-video video {
   width: 55%;
   height: 300px;
