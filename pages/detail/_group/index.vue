@@ -99,9 +99,11 @@ export default {
       isBiradisplay: true,
     }
   },
-  // validate({ params }) {
-  //   // return /同大硬式/.test(params.group)
-  // },
+  validate({ params }) {
+    return /(アルバトロス|コスモス|クリーム|ダブルフォルト|同大硬式|エトランゼ|フライスペック|グリーン|インペリアル|レスカ|ノービス|ピーナッツ|レジーナ|うぃってぃー)/.test(
+      params.group
+    )
+  },
   async mounted() {
     // パラメーター取得
     const params = this.$route.params.group
