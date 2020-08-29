@@ -32,6 +32,9 @@
           <li v-if="data.basicInfo[0].canJoinGrade === 2">
             募集回生：いつでも
           </li>
+          <li v-if="data.basicInfo[0].members">
+            会員数：{{ data.basicInfo[0].members }}
+          </li>
           <li>アピールポイント：{{ data.appeal }}</li>
           <div class="p-to-detail">
             <router-link :to="`/detail/${data.name}`">
