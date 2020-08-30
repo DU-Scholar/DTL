@@ -60,7 +60,7 @@
     </div>
     <div class="d-flex p-form">
       <div class="p-pdf">
-        <a @click="handleNone" id="#" class="link-bt text_button">新歓情報</a>
+        <a id="#" class="link-bt text_button" @click="handleNone">新歓情報</a>
         <p v-if="!isBiradisplay" class="text_description-content">
           現在ビラはダウンロードできません
         </p>
@@ -127,6 +127,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '@/assets/scss/mixins';
+.text_description-title h1 {
+  font-size: 3rem;
+}
 .p-detail {
   margin: 0;
   background-color: #e5f2f3;
@@ -175,13 +178,15 @@ h3:before {
 .p-gform {
   width: 50%;
 }
-@media screen and (max-width: 480px) {
-  .d-flex {
-    flex-direction: column;
-  }
+@media screen and (max-width: 768px) {
   .p-pdf,
   .p-gform {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .d-flex {
+    flex-direction: column;
   }
 }
 .info {

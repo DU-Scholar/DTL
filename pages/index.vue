@@ -1,6 +1,10 @@
 <template>
   <div class="p-top">
-    <div class="p-search-text">検索コマンド</div>
+    <div class="p-search-text">
+      検索コマンド<span class="p-attention"
+        >※ボタンを押すと検索結果が反映されます。</span
+      >
+    </div>
     <div v-if="device === 'pc'" class="p-menu c-cards">
       <div class="p-menu-list">
         <div class="p-menu-list_button">
@@ -258,6 +262,13 @@ export default {
 .p-title {
   display: flex;
 }
+.p-attention {
+  font-size: 13px;
+  color: navy;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
 .p-header-list {
   margin: 4% 0 0 45%;
 }
@@ -370,6 +381,11 @@ img {
   }
   .p-to-detail {
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .p-attention {
+    display: block;
   }
 }
 /*サンプルのボタン*/

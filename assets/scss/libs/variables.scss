@@ -50,7 +50,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_card-title{
   font-family: $font-family;
   color: $clr_text-black;
-  font-size: 26px;
+  font-size: 23px;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_card-content{
   font-family: $font-family;
   color: $clr_text-gray;
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_description-title{
   font-family: $font-family;
   color: $clr_text-black;
-  font-size: 32px;
+  font-size: 27px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_description-subtitle{
   font-family: $font-family;
   color: $clr_text-black;
-  font-size: 27px;
+  font-size: 24px;
   text-decoration: none;
 }
 
@@ -83,10 +83,13 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_description-content{
   font-family: $font-family;
   color: $clr-text-gray;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
-
+  
 //年間行事カレンダーの月
 @mixin text_calendar-month {
   font-family: $font-family;
