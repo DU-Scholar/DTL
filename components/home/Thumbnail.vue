@@ -9,12 +9,8 @@
       </div>
       <img :src="`/detail/${group}/samnail.png`" alt="集合写真" />
       <div class="p-sns">
-        <a v-if="data.Twitter" :href="`${data.Twitter}`"
-          ><img src="~@/assets/images/Twitter.png" alt="Twitter"
-        /></a>
-        <a v-if="data.Instagram" :href="`${data.Instagram}`"
-          ><img src="~@/assets/images/Instagram.png" alt="Instagram"
-        /></a>
+        <a v-if="data.Twitter" :href="`${data.Twitter}`">Twitter</a>
+        <a v-if="data.Instagram" :href="`${data.Instagram}`">Instagram</a>
       </div>
     </div>
     <div class="p-container-r text_card-content">
@@ -128,7 +124,7 @@ ul {
 .p-sns a {
   text-decoration: none;
   margin-right: 30px;
-  color: #bfbfbf;
+  color: #808080;
 }
 .p-container-r {
   width: 50%;
