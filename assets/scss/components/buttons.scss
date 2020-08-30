@@ -58,6 +58,10 @@ input.bt[type="radio"]:checked + label {
   }
 }
 @media screen and (max-width: 768px) {
+  .link-bt {
+    width: 130px;
+    margin: 30px 0;
+  }
   input.bt[type="radio"] + label{
     width: 95px;
   }
