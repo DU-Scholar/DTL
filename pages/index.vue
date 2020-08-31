@@ -185,7 +185,7 @@
             <option value="2">いつでも</option>
           </select>
         </div>
-        <div class="p-search">
+        <div class="p-search" v-if="isDisplay">
           <a class="link-bt text_button">上記の条件で検索</a>
         </div>
       </div>
@@ -346,6 +346,7 @@ img {
   .p-sp-menu {
     padding-top: 1px;
     margin-bottom: 20px;
+    padding-bottom: 15px;
   }
   .p-container-l {
     width: 47%;
@@ -386,6 +387,9 @@ img {
 @media screen and (max-width: 450px) {
   .p-attention {
     display: block;
+  }
+  .p-search-text {
+    font-size: 22px;
   }
 }
 /*サンプルのボタン*/
