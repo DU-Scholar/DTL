@@ -19,7 +19,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
 @mixin text_header {
   font-family: $font-family;
   color: $clr_text-blue;
-  font-size: 22px;
+  font-size: 50px;
   text-decoration: none;
 }
 //検索ボックスの項目日本語
@@ -89,7 +89,7 @@ Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
   }
 }
-  
+
 //年間行事カレンダーの月
 @mixin text_calendar-month {
   font-family: $font-family;

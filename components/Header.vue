@@ -47,7 +47,6 @@ div.c-header {
     a {
       text-decoration: none;
       h1 {
-        font-size: 50px;
         margin-left: 20px;
         br.on_sp {
           display: none;

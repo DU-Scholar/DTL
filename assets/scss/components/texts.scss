@@ -6,6 +6,7 @@
 
 .text_header--disabled{
   @include text_header;
+  font-size: 22px;
   color: $clr_text-blue-light;
 }
 
