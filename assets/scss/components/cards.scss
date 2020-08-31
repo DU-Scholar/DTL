@@ -6,3 +6,8 @@
   box-shadow:  5px 5px 15px #b1b8b8,
    -5px -5px 15px #ffffff;
 }
+@media screen and (max-width: 450px) {
+ .c-cards {
+   border-radius: 70px;;
+ }
+}
