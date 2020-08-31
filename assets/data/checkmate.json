@@ -1,0 +1,38 @@
+{
+  "name": "checkmate",
+  "rightName": "CHECKMATE",
+  "movie": "",
+  "LongDescription": "こんにちばんは！同志社大学公認テニスサークルのCheckmateです！<br />\nチェックの魅力はイベントの多さ！京都散策、制服ユニバ、琵琶湖BBQなど月1回のペースでイベントがあり、週一企画が開催される期間もあったりします！テニスもほぼ毎日やってるので超アクティブなサークルです！ <br />\nそして！チェックは4回生までイベントに参加できちゃいます！！なので、同級生はもちろん、上回生とも仲良くなれるんです！縦横のつながりガチガチです！ ",
+  "descriptions": [{
+    "title": "少人数ならではの仲良さ！！",
+    "about": "チェックは大人数のサークルではなく、一学年30〜40人程度なので、同級生同士はもちろん、4回生の人たちともめちゃくちゃ仲良くなれます！！",
+    "image": "/detail/checkmate/image1.png"
+  },
+    {
+      "title": "イベントの充実！！",
+      "about": "上にも書いた通り、チェックはほぼ月1のペースでのイベントや、週一企画、さらには新歓合宿、夏合宿、秋合宿、春合宿と、年に4回もの合宿があります！！",
+      "image": "/detail/checkmate/image2.png"
+    },
+    {
+      "title": "テニスは自由！！",
+      "about": "チェックはテニスを週5で開催してますが、全部参加自由になってます！週1でゆーるくテニスしたい人、週3〜4回本気でテニスしたい人、みんなみんな大歓迎です！！",
+      "image": "/detail/checkmate/image3.png"
+    }],
+  "Event": [
+    ""
+  ],
+  "basicInfo": [{
+    "frequency": 5,
+    "place": 1,
+    "members": 60,
+    "canJoinGrade":1,
+    "practice": 1
+  }],
+  "statistics": [{
+    "sexRate": 0.4,
+    "gakubu": []
+  }],
+  "Twitter":"twitter.com/38thcheckmate",
+  "Instagram":"https://instagram.com/checkmate_38th",
+  "appeal": "少人数規模だけど、家族みたいな感じのサークルです\uD83E\uDD17"
+}

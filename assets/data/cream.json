@@ -1,8 +1,9 @@
 {
-"name": "クリーム",
-"movie": "",
-"LongDescription": "テニスでは初心者から経験者までが入会しているので、皆が楽しめちゃいます😆<br />\nクリームはなんといっても、テニス以外の遊びがいっぱい🤤👏🏻<br>\n先輩後輩とっても仲良くて、全体企画はもちろん、プライベートでもドライブ🚗³₃に行ったり、旅行に行ったり✈️と、the 大学生❗️みたいなことをします😊✌🏻",
-"descriptions": [{
+  "name": "クリーム",
+  "rightName": "CREAM",
+  "movie": "",
+  "LongDescription": "テニスでは初心者から経験者までが入会しているので、皆が楽しめちゃいます😆<br />\nクリームはなんといっても、テニス以外の遊びがいっぱい🤤👏🏻<br>\n先輩後輩とっても仲良くて、全体企画はもちろん、プライベートでもドライブ🚗³₃に行ったり、旅行に行ったり✈️と、the 大学生❗️みたいなことをします😊✌🏻",
+  "descriptions": [{
     "title": "テニス初心者でも安心🌟",
     "about": "リームはみんながみんなテニス経験者で、上手い！っていうことは無く、初心者がほとんどです❗️テニス出来ないし、、、😣って思ってる新入生！楽しみながらテニスしましょう😊✌🏻",
     "image": "/detail/cream/image1.png"
@@ -16,27 +17,26 @@
     "title": "イベントが多い",
     "about": "クリームは1年を通して様々な企画をします😆<br>\n大きいイベントは春合宿や夏合宿、制服ユニバ、ハロウィンパーティー、Xmasパーティー等🌸🍉🎃🎅🏼<br>\nこの他にも月1.2程度で、先輩が企画してくれるイベントがあります😊 ",
     "image": "/detail/cream/image3.png"
-  }
-],
-"Event": [
-  "新歓合宿",
-  "夏合宿",
-  "ハロウィンパーティー",
-  "新歓ユニバ",
-  "春合宿"
-],
-"basicInfo": [{
-  "frequency": "",
-  "place": 1,
-  "members": 98,
-  "canJoinGrade":2,
-  "practice": 2
-}],
-"statistics": [{
-  "sexRate": 0.4,
-  "gakubu": []
-}],
-"Twitter":"https://twitter.com/cream__2020",
-"Instagram":"https://instagram.com/cream__2020",
-"appeal": "世の中に存在するサークルで1番楽しいですよ！"
+  }],
+  "Event": [
+    "新歓合宿",
+    "夏合宿",
+    "ハロウィンパーティー",
+    "新歓ユニバ",
+    "春合宿"
+  ],
+  "basicInfo": [{
+    "frequency": "",
+    "place": 1,
+    "members": 98,
+    "canJoinGrade":2,
+    "practice": 2
+  }],
+  "statistics": [{
+    "sexRate": 0.4,
+    "gakubu": []
+  }],
+  "Twitter":"https://twitter.com/cream__2020",
+  "Instagram":"https://instagram.com/cream__2020",
+  "appeal": "世の中に存在するサークルで1番楽しいですよ！"
 }

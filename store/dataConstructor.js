@@ -14,6 +14,7 @@ import novis from '@/assets/data/novis.json'
 import peanuts from '@/assets/data/peanuts.json'
 import regiena from '@/assets/data/regiena.json'
 import witty from '@/assets/data/witty.json'
+import checkmate from '@/assets/data/checkmate.json'
 
 export const dataMapper = createNamespacedHelpers('dataConstructor')
 
@@ -27,6 +28,9 @@ export default {
     SET_DATA(state, name) {
       if (name === 'アルバトロス') {
         state.data = albatorosu
+      }
+      if (name === 'checkmate') {
+        state.data = checkmate
       }
       if (name === 'コスモス') {
         state.data = cosmos

@@ -1,8 +1,9 @@
 {
-"name": "ダブルフォルト",
-"movie": "/detail/doublefault/doublefault.mp4",
-"LongDescription": "初心者からテニスを始めるって人でも全然大丈夫なサークルです！！<br />\n未経験者から熟練者まで幅広いレベルのテニスサークルです！！かといってテニスだけをしてるわけではなく、イベントも豊富で同級生同士はもちろん先輩後輩もとても仲が良いです。<br />\n雰囲気が知りたいって人は、Instagramを覗いてもらうとよく知れると思います！！<br />\nサークル入会確定者も増えてきてます！興味ある方ぜひInstagramにdm飛ばしてください！",
-"descriptions": [{
+  "name": "ダブルフォルト",
+  "rightName": "double fault",
+  "movie": "/detail/doublefault/doublefault.mp4",
+  "LongDescription": "初心者からテニスを始めるって人でも全然大丈夫なサークルです！！<br />\n未経験者から熟練者まで幅広いレベルのテニスサークルです！！かといってテニスだけをしてるわけではなく、イベントも豊富で同級生同士はもちろん先輩後輩もとても仲が良いです。<br />\n雰囲気が知りたいって人は、Instagramを覗いてもらうとよく知れると思います！！<br />\nサークル入会確定者も増えてきてます！興味ある方ぜひInstagramにdm飛ばしてください！",
+  "descriptions": [{
     "title": "夏団",
     "about": "テニス好きが多いからこそ、応援もプレーも真剣🔥サークルで一丸となり優勝をめざします！！<br />\nテニスを知らなくても、最高に楽しめるんです！！テニス好きはよりガチになれます！！めっちゃ楽しいです！！(確信)",
     "image": "/detail/doublefault/image1.png"
@@ -16,23 +17,22 @@
     "title": "夏合宿",
     "about": "サークル生涯で一番の思い出となるイベントです。<br />\n4泊5日テニスを本気で楽しめる他に毎日色々なイベントを用意してます！<br />\nBBQ、肝試し、花火…あとは入会してからのお楽しみ！<br />\n一緒に最高の思い出を作りましょう",
     "image": "/detail/doublefault/image3.png"
-  }
-],
-"Event": [
-  ""
-],
-"basicInfo": [{
-  "frequency": "",
-  "place": 3,
-  "members": 52,
-  "canJoinGrade":1,
-  "practice": 2
-}],
-"statistics": [{
-  "sexRate": 0.5,
-  "gakubu": [1,2,5,6,9,10,11,15]
-}],
-"Twitter":"https://twitter.com/dftc2020",
-"Instagram":"https://instagram.com/double_fault2020",
-"appeal": "アットホームでテニス好き！初心者大歓迎！！"
+  }],
+  "Event": [
+    ""
+  ],
+  "basicInfo": [{
+    "frequency": "",
+    "place": 3,
+    "members": 52,
+    "canJoinGrade":1,
+    "practice": 2
+  }],
+  "statistics": [{
+    "sexRate": 0.5,
+    "gakubu": [1,2,5,6,9,10,11,15]
+  }],
+  "Twitter":"https://twitter.com/dftc2020",
+  "Instagram":"https://instagram.com/double_fault2020",
+  "appeal": "アットホームでテニス好き！初心者大歓迎！！"
 }

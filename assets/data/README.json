@@ -1,6 +1,8 @@
 {
   //サークル名
   "name": "同大硬式",
+  //正式名称
+  "rightName": "ALBATROSS5",
   //動画のパス
   "movie": "/detail/ddkoushiki/615821837.288317.mp4",
   //「私たちはこんなサークルです」文言

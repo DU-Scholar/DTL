@@ -5,7 +5,7 @@
   >
     <div class="p-container-l">
       <div class="p-card-list-title text_card-title">
-        <h3>{{ data.name }}</h3>
+        <h3>{{ data.rightName }}</h3>
       </div>
       <img :src="`/detail/${group}/samnail.png`" alt="集合写真" />
       <div class="p-sns">

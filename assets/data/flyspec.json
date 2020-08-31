@@ -1,8 +1,9 @@
 {
-"name": "フライスペック",
-"movie": "",
-"LongDescription": "今出田辺合同で色んな回生の人が加入してるので、その分出会いが沢山あります🌸出会いの数だけ遊びがある❗️<br />\n同回の人と旅行に行ったり、優し〜い先輩がご飯もドライブもどこで〜も連れて行きます💪<br />\n年間イベントも沢山あるので、1年間暇することはまずないです🌟",
-"descriptions": [{
+  "name": "フライスペック",
+  "rightName": "Flyspeck",
+  "movie": "",
+  "LongDescription": "今出田辺合同で色んな回生の人が加入してるので、その分出会いが沢山あります🌸出会いの数だけ遊びがある❗️<br />\n同回の人と旅行に行ったり、優し〜い先輩がご飯もドライブもどこで〜も連れて行きます💪<br />\n年間イベントも沢山あるので、1年間暇することはまずないです🌟",
+  "descriptions": [{
     "title": "みんなで楽しくテニスする！！",
     "about": "合宿では、“班グッズ”という、いわばコスプレのような格好(カチューシャやマント)でテニスをするのが恒例です✨<br />\n初心者経験者関係なく、全員で楽しくテニスができます😆！",
     "image": "/detail/flyspec/image1.png"
@@ -16,27 +17,26 @@
     "title": "圧倒的アットホーム！！",
     "about": "少なすぎず多すぎない人数で全員と仲良くなれる！<br />\nみんなの個性が輝いて、それを受け入れてもらえる環境がある！<br />\nFlyがあなたの居場所になります🌟これこそがFlyのいちばんの魅力🥳",
     "image": "/detail/flyspec/image3.png"
-  }
-],
-"Event": [
+  }],
+  "Event": [
   "新歓合宿",
   "夏合宿",
   "EVE合宿",
   "春合宿",
   "月イベ(毎月今出田辺が集まってわちゃわちゃ遊びます笑笑)"
-],
-"basicInfo": [{
-  "frequency": "",
-  "place": 3,
-  "members": 86,
-  "canJoinGrade":1,
-  "practice": 2
-}],
-"statistics": [{
-  "sexRate": 0.5,
-  "gakubu": [1,2,3,4,5,9,10,15]
-}],
-"Twitter":"https://twitter.com/2020Flyspeck",
-"Instagram":"https://instagram.com/flyspeck_2020",
-"appeal": "なかよぴ💗"
+  ],
+  "basicInfo": [{
+    "frequency": "",
+    "place": 3,
+    "members": 86,
+    "canJoinGrade":1,
+    "practice": 2
+  }],
+  "statistics": [{
+    "sexRate": 0.5,
+    "gakubu": [1,2,3,4,5,9,10,15]
+  }],
+  "Twitter":"https://twitter.com/2020Flyspeck",
+  "Instagram":"https://instagram.com/flyspeck_2020",
+  "appeal": "なかよぴ💗"
 }
