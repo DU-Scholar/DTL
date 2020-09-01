@@ -42,11 +42,12 @@
     "canJoinGrade":1,
     "practice": 1
     }],
-    "statistics": [{
-      "sexRate": 0.5,
-      "gakubu": [1,2,3,4,5,8,9,12,14,15]
-    }],
-    "Twitter":"twitter.com/Regina2020_",
-    "Instagram":"https://instagram.com/dtl_regina2020",
-    "appeal": "テニスと遊びの全力度"
+  "statistics": [{
+    "sexRate": 0.5,
+    "gakubu": [1,2,3,4,5,8,9,12,14,15]
+  }],
+  "Twitter":"twitter.com/Regina2020_",
+  "Instagram":"https://instagram.com/dtl_regina2020",
+  "appeal": "テニスと遊びの全力度",
+  "contactForm": "https://docs.google.com/forms/d/1oUbv8O8oTYJ2VJTYJ_ltD9o8xqwQD1q64Zkk9UnvEJ4/edit?usp=sharing"
 }
