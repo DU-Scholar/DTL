@@ -2,7 +2,7 @@
 <template>
   <div class="p-detail">
     <div class="text_description-title">
-      <h1>{{ data.name }}</h1>
+      <h1>{{ data.rightName }}</h1>
     </div>
 
     <div v-if="data.movie" class="intro-video">
@@ -66,7 +66,13 @@
         </p>
       </div>
       <div class="p-gform">
-        <a id="#" class="link-bt text_button">お問い合わせ</a>
+        <a
+          :href="data.contactForm"
+          id="#"
+          target="_blank"
+          class="link-bt text_button"
+          >お問い合わせ</a
+        >
       </div>
     </div>
     <div class="back">
