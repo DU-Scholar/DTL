@@ -20,20 +20,13 @@
     }
   ],
   "Event": [
-    "新歓",
-    "GWイベント",
-    "BBQ",
-    "田辺合宿",
-    "最終週イベント",
-    "前期打ち上げ",
+    "春合宿",
+    "夏：OB戦",
     "夏合宿",
-    "班旅行",
-    "Pカップ",
-    "秋合宿",
-    "クリイスマスパーティー",
-    "追い出しパーティー",
-    "卒業パーティー",
-    "春合宿"
+    "ハロウィンパーティー",
+    "秋：OB戦",
+    "忘年会",
+    "冬合宿"
   ],
   "basicInfo": [{
     "frequency": "",
@@ -46,7 +39,7 @@
     "sexRate": 0.5,
     "gakubu": [1,2,3,4,5,8,9,12,14,15]
   }],
-  "Twitter":"twitter.com/Regina2020_",
+  "Twitter":"https://twitter.com/Regina2020_",
   "Instagram":"https://instagram.com/dtl_regina2020",
   "appeal": "テニスと遊びの全力度",
   "contactForm": "https://docs.google.com/forms/d/1oUbv8O8oTYJ2VJTYJ_ltD9o8xqwQD1q64Zkk9UnvEJ4/edit?usp=sharing"
