@@ -15,6 +15,7 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
+    titleTemplate: '%s - DTL NAVI',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,14 +24,35 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
       {
-        src:
-          'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js',
+        hid: 'description',
+        name: 'description',
+        content:
+          '同志社大学のテニスサークルの一覧を掲載しています。活動日程から、ビラのダウンロードまで様々な用途でご利用いただけます。',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: '同志社　テニスサークル　テニス　サークル　新歓',
+      },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'DTL NAVI' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://dtlnavi.com' },
+      { hid: 'og:title', property: 'og:title', content: 'DTL NAVI' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          '同志社大学のテニスサークルの一覧を掲載しています。活動日程から、ビラのダウンロードまで様々な用途でご利用いただけます。',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://dtlnavi.com/img/headerImage.png',
       },
     ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [],
   },
   /*
    ** Global CSS
