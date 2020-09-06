@@ -60,6 +60,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
   ],
+  googleAnalytics: {
+    id: 'UA-177362145-1',
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
