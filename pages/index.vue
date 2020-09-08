@@ -258,6 +258,8 @@ export default {
 <style lang="scss" scoped>
 .p-top {
   padding: 0 70px;
+  margin: auto;
+  max-width: 1200px;
 }
 .p-title {
   display: flex;
@@ -278,7 +280,6 @@ export default {
   margin: 4% 0 2% 0;
 }
 .p-menu {
-  margin-top: 30px;
   padding: 10px 40px;
 }
 ul {
@@ -286,8 +287,7 @@ ul {
 }
 .p-menu-list_button ul {
   display: flex;
-  margin-top: 3%;
-  margin-bottom: 7%;
+ margin: 1% 0;
 }
 .p-menu-list_button ul li {
   margin: auto 5% auto 0;
@@ -336,13 +336,13 @@ img {
   text-align: center;
 }
 /*レスポンシブ*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .p-menu-list_button ul li h2 {
     margin-bottom: 10px;
     width: 144px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .p-sp-menu {
     padding-top: 1px;
     margin-bottom: 20px;
