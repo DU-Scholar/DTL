@@ -45,4 +45,15 @@ export default {
 th {
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .p-Events {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-Events {
+    width: auto;
+    margin-left: 0;
+  }
+}
 </style>
