@@ -63,7 +63,7 @@ export default {
 </script>
 <style scoped>
 .p-faculty-constitution {
-  margin: 20px;
+  margin: 20px 0;
   text-align: center;
   padding: 30px;
 }

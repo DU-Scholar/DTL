@@ -67,8 +67,8 @@
       </div>
       <div class="p-gform">
         <a
-          :href="data.contactForm"
           id="#"
+          :href="data.contactForm"
           target="_blank"
           class="link-bt text_button"
           >お問い合わせ</a
