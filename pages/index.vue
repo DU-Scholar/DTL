@@ -185,7 +185,7 @@
             <option value="2">いつでも</option>
           </select>
         </div>
-        <div class="p-search" v-if="isDisplay">
+        <div v-if="isDisplay" class="p-search">
           <a class="link-bt text_button">上記の条件で検索</a>
         </div>
       </div>
@@ -287,7 +287,7 @@ ul {
 }
 .p-menu-list_button ul {
   display: flex;
- margin: 1% 0;
+  margin: 1% 0;
 }
 .p-menu-list_button ul li {
   margin: auto 5% auto 0;
